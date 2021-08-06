@@ -76,31 +76,31 @@ You will create the new Microsoft 365 Group named "IT-Department" and then add t
 
         - Group type: leave default
 
-Under **Set up the basics**
+   Under **Set up the basics**
         
-	- Name: **IT-Department**
+      - Name: **IT-Department**
 
-	- Description: **All staff of the IT-Department**
+      - Description: **All staff of the IT-Department**
 	
-Under **Assign owners**
+   Under **Assign owners**
 
-	- Owners: **Joni Sherman**
+      - Owners: **Joni Sherman**
 
-Under **Add Members**
+   Under **Add Members**
 
-	- Members: **Alex Wilber, Allan Deyoung, Lynne Robbins** and **Megan Bowen**
+      - Members: **Alex Wilber, Allan Deyoung, Lynne Robbins** and **Megan Bowen**
 	
-Under **Add Settings**
+   Under **Add Settings**
 
-        - Group email address: **IT-Department**@&lt;YourTenant&gt;.onmicrosoft.com
+      - Group email address: **IT-Department**@&lt;YourTenant&gt;.onmicrosoft.com
 
-	- Privacy: **Private – Only members can see group content**
+      - Privacy: **Private – Only members can see group content**
 
-	- Create a team for this group: **Clear the checkbox**
+      - Create a team for this group: **Clear the checkbox**
 
-Under **Review and finish adding group**
+   Under **Review and finish adding group**
  
-        - Review the changes and click on **Create Group**
+      - Review the changes and click on **Create Group**
 
 3. Close the **Microsoft 365 admin center**.
 
