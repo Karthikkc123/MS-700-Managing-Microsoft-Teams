@@ -429,7 +429,7 @@ Your organization has ordered devices for Microsoft Teams room. In the meantime,
     ```powershell
     Install-Module AzureAD
     ```
-    Confirm the command with **Y** for yes
+    Confirm the command with **Y** for Yes
     
     Confirm the command with **A** for Yes to All
 
