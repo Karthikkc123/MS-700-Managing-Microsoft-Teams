@@ -283,7 +283,7 @@ You are in the planning phase of a Microsoft Teams deployment. Before deploying 
 
 12. A **User Account Control** window will appear in the taskbar. Maximize it and select **Yes.**
 
-13. When the installation was successful, the symbol below **Network assessment tool** will change to a green checkmark in a circle too.
+13. On successful installation, the symbol below **Network assessment tool** will change to a green checkmark in a circle too.
 
 14. Select the green **Start** button in the **Network Connectivity and Quality Test** section to start the tests.
  
