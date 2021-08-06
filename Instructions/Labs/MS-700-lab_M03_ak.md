@@ -49,7 +49,7 @@ Please note that odl_userXXXXX@<YourTenant>.onmicrosoft.com is your administrato
 
 In this task, you will use the default global admin to login to the Microsoft 365 admin center and assign several teams admin roles to different users. This task is crucial for the following tasks and exercises because you will perform most of the tasks in context of Joni Sherman’s account.
 
-1. Sign-in to the **Microsoft 365 admin center** ([**https://admin.microsoft.com**](https://admin.microsoft.com/)) using **MOD Administrator** (admin@&lt;YourTenant&gt;.onmicrosoft.com).
+1. Sign in to the **Microsoft 365 admin center** ([**https://admin.microsoft.com**](https://admin.microsoft.com/)) using **MOD Administrator** (admin@&lt;YourTenant&gt;.onmicrosoft.com).
 
 2. Assign the role of the **Teams Administrator** to **Joni Sherman**.
 
@@ -70,7 +70,7 @@ In real world scenarios, the Microsoft 365 Groups would already exist and your t
 
 You will create the new Microsoft 365 Group named "IT-Department" and then add the pilot members serving as a basis for your future teams and licensing.
 
-1. Sign-in to the **Microsoft 365 admin center** ([**https://admin.microsoft.com**](https://admin.microsoft.com/)) as **Joni Sherman** (JoniS@&lt;YourTenant&gt;.onmicrosoft.com).
+1. Sign in to the **Microsoft 365 admin center** ([**https://admin.microsoft.com**](https://admin.microsoft.com/)) as **Joni Sherman** (JoniS@&lt;YourTenant&gt;.onmicrosoft.com).
 
 2. Create and configure a new Microsoft 365 group with the following settings:
 
@@ -108,11 +108,11 @@ The new Microsoft 365 Group with the name "IT-Department" was successfully creat
 
 #### Create a new team by using the desktop client
 
-To test the self-service capabilities of Teams, in this task, Megan Bowen will sign-in to the Teams Desktop client, create a new team with the name "Teams Rollout" and add all members participating in the Teams evaluation project.
+To test the self-service capabilities of Teams, in this task, Megan Bowen will sign in to the Teams Desktop client, create a new team with the name "Teams Rollout" and add all members participating in the Teams evaluation project.
 
 1. Connect to the **Client 2 VM** with the credentials that have been provided to you.
 
-2. Connect to the client and sign-in to the Teams Desktop client using **Megan Bowen** (MeganB@&lt;YourTenant&gt;.onmicrosoft.com).
+2. Connect to the client and sign in to the Teams Desktop client using **Megan Bowen** (MeganB@&lt;YourTenant&gt;.onmicrosoft.com).
 
 3. Create a new team with the following settings:
 
@@ -134,7 +134,7 @@ You have successfully created a new team with the Teams Desktop client, added th
 
 In this task, Lynne Robbins will continue testing the self-service capabilities of Teams by using the Teams web client to create another team with the name "Sales". She will also add Megan Bowen as a member.
 
-1. Sign-in to the Teams web client ([**https://teams.microsoft.com**](https://teams.microsoft.com/)) using **Lynne Robbins** (LynneR@&lt;YourTenant&gt;.onmicrosoft.com).
+1. Sign in to the Teams web client ([**https://teams.microsoft.com**](https://teams.microsoft.com/)) using **Lynne Robbins** (LynneR@&lt;YourTenant&gt;.onmicrosoft.com).
 
 2. Create a new team with the following settings:
 
@@ -167,7 +167,7 @@ Next, you will analyze your current bandwidth usage and test your network qualit
 
 1. Connect to the **Client 1 VM** with the credentials that have been provided to you.
 
-2. Sign-in to the **Teams admin center** ([**https://admin.microsoft.com**](https://admin.microsoft.com/)) using **Joni Sherman** (JoniS@&lt;YourTenant&gt;.onmicrosoft.com).
+2. Sign in to the **Teams admin center** ([**https://admin.microsoft.com**](https://admin.microsoft.com/)) using **Joni Sherman** (JoniS@&lt;YourTenant&gt;.onmicrosoft.com).
 
 3. In the **Teams admin center,** on the left-hand navigation pane, expand **Planning**, and select **Network Planner**.
 
@@ -317,7 +317,7 @@ During the planning phase of Teams Phones devices in your organization, you want
 
 2. Open **Microsoft Edge**, maximize the window and navigate to the **Teams admin center** at [**https://admin.teams.microsoft.com/**](https://admin.teams.microsoft.com/).
 
-3. On the **Pick an account** page, select the **Joni Sherman** (JoniS@&lt;YourTenant&gt;.onmicrosoft.com) and sign-in with the provided credentials.
+3. On the **Pick an account** page, select the **Joni Sherman** (JoniS@&lt;YourTenant&gt;.onmicrosoft.com) and sign in with the provided credentials.
 
 4. In **Teams admin center**, on the left navigation pane, select **Devices**, and then choose **IP Phones**.
 
@@ -391,7 +391,7 @@ Your organization has ordered devices for Microsoft Teams room. In the meantime,
    ```powershell
    Connect-ExchangeOnline
    ```
-8. When you see the **Sign in** window, enter admin@&lt;YourTenant&gt;.onmicrosoft.com and sign-in with the credentials provided to you.
+8. When you see the **Sign in** window, enter admin@&lt;YourTenant&gt;.onmicrosoft.com and sign in with the credentials provided to you.
 
 9. Create a new room mailbox named **NY-TeamsRoom1** by running the following cmdlet (remember to replace your tenant name):
 
@@ -429,11 +429,14 @@ Your organization has ordered devices for Microsoft Teams room. In the meantime,
     ```powershell
     Install-Module AzureAD
     ```
+    Confirm the command with **Y** for yes
+    
+    Confirm the command with **A** for Yes to All
 
     ```powershell
     Connect-AzureAD
     ```
-    When you see the Sign-in window, type admin@&lt;YourTenant&gt;.onmicrosoft.com and sign-in with the credentials provided to you.
+    When you see the Sign in window, type admin@&lt;YourTenant&gt;.onmicrosoft.com and sign in with the credentials provided to you.
 
 14. Disable the password expiration for the Teams Room account **NY-TeamsRoom1** by running the following cmdlet:
 
@@ -444,7 +447,7 @@ Your organization has ordered devices for Microsoft Teams room. In the meantime,
 
 16. Open **Microsoft Edge**, maximize the window and navigate to the **Microsoft 365 admin center** at [**https://admin.microsoft.com/**](https://admin.microsoft.com/).
 
-17. On the **Pick an account** page, select the **MOD Administrator** (admin@&lt;YourTenant&gt;.onmicrosoft.com) and sign-in with the provided credentials.
+17. On the **Pick an account** page, select the **MOD Administrator** (admin@&lt;YourTenant&gt;.onmicrosoft.com) and sign in with the provided credentials.
 
 18. In the **Microsoft 365 admin center** from the left navigation pane, under **Billing** select **Purchase services**.
 
