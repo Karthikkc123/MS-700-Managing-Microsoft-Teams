@@ -74,7 +74,7 @@ You will create the new Microsoft 365 Group named "IT-Department" and then add t
 
 2. Create and configure a new Microsoft 365 group with the following settings:
 
-        - Group type: leave default
+      - Group type: leave default
 
    Under **Set up the basics**
         
