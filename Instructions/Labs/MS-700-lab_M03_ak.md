@@ -116,7 +116,7 @@ To test the self-service capabilities of Teams, in this task, Megan Bowen will s
 
 3. Create a new team with the following settings:
 
-	- Type: **Build a team from scratch**
+	- Type: **From scratch**
 
 	- Privacy: **Public**
 
@@ -431,7 +431,7 @@ Your organization has ordered devices for Microsoft Teams room. In the meantime,
     ```
     Confirm the command with **Y** for Yes
     
-    Confirm the command with **A** for Yes to All
+    Confirm the Untrusted repository message with **A** for Yes to All
 
     ```powershell
     Connect-AzureAD
