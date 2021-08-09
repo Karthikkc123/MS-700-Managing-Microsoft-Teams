@@ -198,7 +198,7 @@ In this task you need to sign in to the second client and create a meeting with 
    
    - Right click on Teams and select **Quit**
 
-   - Restart the Teams Desktop cient
+   - Restart the Teams Desktop client
  
 
 #### Task 3 - Configure meeting settings and restrict anonymous users from joining meetings
