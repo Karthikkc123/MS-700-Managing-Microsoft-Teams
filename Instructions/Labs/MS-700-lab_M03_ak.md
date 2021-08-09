@@ -116,7 +116,7 @@ To test the self-service capabilities of Teams, in this task, Megan Bowen will s
 
 3. Create a new team with the following settings:
 
-	- Type: **From scratch**
+	- Type: **Create a team from scratch**
 
 	- Privacy: **Public**
 
@@ -138,7 +138,7 @@ In this task, Lynne Robbins will continue testing the self-service capabilities 
 
 2. Create a new team with the following settings:
 
-	- Type: **Build a team from scratch**
+	- Type: **Create a team from scratch**
 
 	- Privacy: **Private**
 
