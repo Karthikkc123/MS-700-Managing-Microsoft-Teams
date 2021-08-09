@@ -74,19 +74,33 @@ You will create the new Microsoft 365 Group named "IT-Department" and then add t
 
 2. Create and configure a new Microsoft 365 group with the following settings:
 
-	- Name: **IT-Department**
+      - Group type: leave default
 
-	- Description: **All staff of the IT-Department**
+   Under **Set up the basics**
+        
+      - Name: **IT-Department**
 
-	- Owners: **Joni Sherman**
+      - Description: **All staff of the IT-Department**
+	
+   Under **Assign owners**
 
-	- Group email address: **IT-Department**@&lt;YourTenant&gt;.onmicrosoft.com
+      - Owners: **Joni Sherman**
 
-	- Privacy: **Private – Only members can see group content**
+   Under **Add Members**
 
-	- Create a team for this group: **Clear the checkbox**
+      - Members: **Alex Wilber, Allan Deyoung, Lynne Robbins** and **Megan Bowen**
+	
+   Under **Add Settings**
 
-	- Members: **Alex Wilber, Allan Deyoung, Lynne Robbins** and **Megan Bowen**
+      - Group email address: **IT-Department**@&lt;YourTenant&gt;.onmicrosoft.com
+
+      - Privacy: **Private – Only members can see group content**
+
+      - Create a team for this group: **Clear the checkbox**
+
+   Under **Review and finish adding group**
+ 
+      - Review the changes and click on **Create Group**
 
 3. Close the **Microsoft 365 admin center**.
 
@@ -102,7 +116,7 @@ To test the self-service capabilities of Teams, in this task, Megan Bowen will s
 
 3. Create a new team with the following settings:
 
-	- Type: **Build a team from scratch**
+	- Type: **Create a team from scratch**
 
 	- Privacy: **Public**
 
@@ -124,7 +138,7 @@ In this task, Lynne Robbins will continue testing the self-service capabilities 
 
 2. Create a new team with the following settings:
 
-	- Type: **Build a team from scratch**
+	- Type: **Create a team from scratch**
 
 	- Privacy: **Private**
 
@@ -178,6 +192,13 @@ In this task you need to sign in to the second client and create a meeting with 
 
 6. Note that **Start recording** option is visible but is dimmed, not available to be selected.
 
+**Note:** If the **Start recording** option still appears as available for select then you might need to 
+
+   - Goto task bar then click up-arrow to show hidden icons
+   
+   - Right click on Teams and select **Quit**
+
+   - Restart the Teams Desktop client
  
 
 #### Task 3 - Configure meeting settings and restrict anonymous users from joining meetings
@@ -340,7 +361,7 @@ As part of your pilot project for calling functionalities with Microsoft Teams, 
 
 4. Select the **Global (Org-wide default)** policy to edit the default settings.
 
-5. In **Calling policies\Global**, use the dropdown menu right to **Voicemail is available for routing inbound calls** and select **Disabled**. Then select **Save**.
+5. In **Calling policies\Global**, use the dropdown menu right to **Voicemail is available for routing inbound calls** and select **Not enabled**. Then select **Save**.
 
 6. Back on the **Calling policies** page, select **+ Add** on the top pane, to create a new policy.
 
@@ -548,7 +569,7 @@ In this task you will activate the Calling Plan Add-on Trial for your tenant so 
 
 6. Scroll down until you see **Microsoft 365 Domestic Calling Plan Trial** and select **Details**.
 
-7. Select **Get free trial**.
+7. Select **Start free trial**.
 
 8. Select **Try now** to get 25 Calling Plans for a month.
 
@@ -600,11 +621,15 @@ In this task you will order a phone number to a user with an assigned Calling Pl
 
 9. For **Number Type** select **User (Subscriber)**.
 
-10. For **Location,** search **Redmond** and select **Contoso Emergency Address**.
+10. For **Quantity**  enter 1.
 
-11. For **Quantity**  select 1.
+11. For **Location,** 
 
-12. Select **Next**, then **Finish**.
+12. Under **Search by cityname** search **Redmond** and select **Azure HOL 1398**, which appears in the dropdown.
+
+13. Select **Next** 
+
+14. Click on **Place order**
 
 **Note:** It might take some time for the phone numbers to show up. You can check your order from the **Order history** tab.
 
@@ -626,7 +651,7 @@ In this Task you will assign an existing phone number to a user.
 
 6. Under **Emergency Location** select **Search by the location description**.
 
-7. Search for the emergency location you created earlier.
+7. Search for **Redmond** the emergency location you created earlier.
 
 8. Select **Apply** to assign the phone number to the user.
 

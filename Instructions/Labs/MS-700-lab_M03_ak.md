@@ -74,19 +74,33 @@ You will create the new Microsoft 365 Group named "IT-Department" and then add t
 
 2. Create and configure a new Microsoft 365 group with the following settings:
 
-	- Name: **IT-Department**
+      - Group type: leave default
 
-	- Description: **All staff of the IT-Department**
+   Under **Set up the basics**
+        
+      - Name: **IT-Department**
 
-	- Owners: **Joni Sherman**
+      - Description: **All staff of the IT-Department**
+	
+   Under **Assign owners**
 
-	- Group email address: **IT-Department**@&lt;YourTenant&gt;.onmicrosoft.com
+      - Owners: **Joni Sherman**
 
-	- Privacy: **Private – Only members can see group content**
+   Under **Add Members**
 
-	- Create a team for this group: **Clear the checkbox**
+      - Members: **Alex Wilber, Allan Deyoung, Lynne Robbins** and **Megan Bowen**
+	
+   Under **Add Settings**
 
-	- Members: **Alex Wilber, Allan Deyoung, Lynne Robbins** and **Megan Bowen**
+      - Group email address: **IT-Department**@&lt;YourTenant&gt;.onmicrosoft.com
+
+      - Privacy: **Private – Only members can see group content**
+
+      - Create a team for this group: **Clear the checkbox**
+
+   Under **Review and finish adding group**
+ 
+      - Review the changes and click on **Create Group**
 
 3. Close the **Microsoft 365 admin center**.
 
@@ -98,11 +112,11 @@ To test the self-service capabilities of Teams, in this task, Megan Bowen will s
 
 1. Connect to the **Client 2 VM** with the credentials that have been provided to you.
 
-2. Connect to a client and sign in to the Teams Desktop client using **Megan Bowen** (MeganB@&lt;YourTenant&gt;.onmicrosoft.com).
+2. Connect to the client and sign in to the Teams Desktop client using **Megan Bowen** (MeganB@&lt;YourTenant&gt;.onmicrosoft.com).
 
 3. Create a new team with the following settings:
 
-	- Type: **Build a team from scratch**
+	- Type: **From scratch**
 
 	- Privacy: **Public**
 
@@ -199,7 +213,7 @@ Next, you will analyze your current bandwidth usage and test your network qualit
 
 	- In the **Network settings** section, ensure **ExpressRoute** button is **Off**.
 
-	- In the **Network settings** section, turn **On** the **Connected to WAN** button, then in **WAN link capacity** box type **500**, in the **WAN audio queue size** box type **100**, and in **Video queue size** box type **200**.
+	- In the **Network settings** section, turn **On** the **Connected to WAN** button, then in **WAN link capacity** box type **500**, in the **WAN audio queue size** box type **100**, and in **WAN Video queue size** box type **200**.
 
 	- In the **Network settings** section, in the **PSTN egress** drop-down box, **choose VoIP only**, and then select **Save**.
 
@@ -261,33 +275,31 @@ You are in the planning phase of a Microsoft Teams deployment. Before deploying 
 
 8. Open **Network Testing Companion** from the desktop shortcut and select the **Install** button, to install the Network Assessment Tool.
 
-9. On the **User Account Control** window, select **Yes**.
+9. Wait until window **Skype for Business and Microsoft Teams Network Testing Companion** initializes with green **Start** button appears in the **Network Connectivity and Quality Test** section on the right side of the window.
 
-10. Wait until window **Skype for Business and Microsoft Teams Network Testing Companion** initializes with green **Start** button appears in the **Network Connectivity and Quality Test** section on the right side of the window.
+10. Review the information under **Windows operating system** and **Internet connection** sections and verify that no errors appear.
 
-11. Review the information under **Windows operating system** and **Internet connection** sections and verify that no errors appear.
+11. Select the green **Install** circle below **Network connectivity and quality test**.
 
-12. Select the green **Install** circle below **Network connectivity and quality test**.
+12. A **User Account Control** window will appear in the taskbar. Maximize it and select **Yes.**
 
-13. A **User Account Control** window will appear in the taskbar. Maximize it and select **Yes.**
+13. On successful installation, the symbol below **Network assessment tool** will change to a green checkmark in a circle too.
 
-14. When the installation was successful, the symbol below **Network assessment tool** will change to a green checkmark in a circle too.
-
-15. Select the green **Start** button in the **Network Connectivity and Quality Test** section to start the tests.
+14. Select the green **Start** button in the **Network Connectivity and Quality Test** section to start the tests.
  
-16. On the **Windows Security Alert** window, select **Allow access**. 
+15. On the **Windows Security Alert** window, select **Allow access**. 
 
     >**Note:** If you receive a timeout message during the connectivity test, you can select the **Settings** tab in the tool. Adjust the **Connectivity test timeout (seconds)** option to a larger value and then start the test again.
 
-17. When the tests have finished, the symbols below **Connectivity** and **Quality** will turn to green checkmarks in green circles.
+16. When the tests have finished, the symbols below **Connectivity** and **Quality** will turn to green checkmarks in green circles.
 
-18. After the test is **finished**, select the **View Results** tab and review the detailed results of the tests.
+17. After the test is **finished**, select the **View Results** tab and review the detailed results of the tests.
 
-19. In the **View Results** tab, select **Report** file icon under **Network Connectivity** and **Network Quality** and review the testing steps and reports.
+18. In the **View Results** tab, select **Report** file icon under **Network Connectivity** and **Network Quality** and review the testing steps and reports.
 
-20. Discuss the results with the instructor.
+19. Discuss the results with the instructor.
 
-21. Close all notepad windows and the **Skype for Business and Microsoft Teams Network Testing Companion.**
+20. Close all notepad windows and the **Skype for Business and Microsoft Teams Network Testing Companion.**
 
 In this task, you have used Skype for Business and Microsoft Teams Network Testing Companion to test the connectivity and connection quality of your network infrastructure for Microsoft Teams.
 
@@ -363,32 +375,30 @@ Your organization has ordered devices for Microsoft Teams room. In the meantime,
 
 2. On the taskbar at the bottom of the page, right click the **Start** button and then select **Windows PowerShell (Admin)**.
 
-3. Confirm the **User Account Control** window with **Yes**.
-
-4. Enter the following cmdlet to install the Exchange PowerShell v2:
+3. Enter the following cmdlet to install the Exchange PowerShell v2:
 
    ```powershell
    Install-Module ExchangeOnlineManagement
    ```
-5. Confirm the Untrusted repository message with **y** for yes.
+4. Confirm the Untrusted repository message with **y** for yes.
 
-6. Close the elevated PowerShell window.
+5. Close the elevated PowerShell window.
 
-7. Right-click the Start button and select **Windows PowerShell.**
+6. Right-click the Start button and select **Windows PowerShell.**
 
-8. Enter the following cmdlet to connect to Exchnage Online PowerShell:
+7. Enter the following cmdlet to connect to Exchnage Online PowerShell:
 
    ```powershell
    Connect-ExchangeOnline
    ```
-9. When you see the **Sign in** window, enter admin@&lt;YourTenant&gt;.onmicrosoft.com and sign in with the credentials provided to you.
+8. When you see the **Sign in** window, enter admin@&lt;YourTenant&gt;.onmicrosoft.com and sign in with the credentials provided to you.
 
-10. Create a new room mailbox named **NY-TeamsRoom1** by running the following cmdlet (remember to replace your tenant name):
+9. Create a new room mailbox named **NY-TeamsRoom1** by running the following cmdlet (remember to replace your tenant name):
 
     ```powershell
     New-Mailbox -Name "NY-TeamsRoom1" -Alias NY-TeamsRoom1 -Room -EnableRoomMailboxAccount $true -MicrosoftOnlineServicesID NY-TeamsRoom1@<YourTenant>.onmicrosoft.com -RoomMailboxPassword (ConvertTo-SecureString -String 'pass@word1' -AsPlainText -Force)
     ```
-11. Configure the Calendar Processing features for the Teams Room. Read the following description and run the cmdlet at the end:
+10. Configure the Calendar Processing features for the Teams Room. Read the following description and run the cmdlet at the end:
 
 	- AutomateProcessing: **AutoAccept** (Meeting organizers receive the room reservation decision directly without human intervention: free = accept; busy = decline.)
 
@@ -407,46 +417,53 @@ Your organization has ordered devices for Microsoft Teams room. In the meantime,
     ```powershell
     Set-CalendarProcessing -Identity "NY-TeamsRoom1" -AutomateProcessing AutoAccept -AddOrganizerToSubject $false -DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false -AddAdditionalResponse $true -AdditionalResponse "This is a Teams Meeting room"
     ```
-12. Disconnect from Exchage Online and end the established session with the following cmdlet:
+11. Disconnect from Exchage Online and end the established session with the following cmdlet:
 
     ```powershell
     Disconnect-ExchangeOnline
     ```
-13. Confirm the command with **y** for yes.
+12. Confirm the command with **y** for yes.
 
-14. Connect to **Azure AD PowerShell** to configure Teams Room account settings by running the following cmdlets:
+13. To configure Teams Room account settings using the **Azure AD Powershell** run the following cmdlets:
+    
+    ```powershell
+    Install-Module AzureAD
+    ```
+    Confirm the command with **Y** for Yes
+    
+    Confirm the Untrusted repository message with **A** for Yes to All
 
     ```powershell
     Connect-AzureAD
     ```
     When you see the Sign in window, type admin@&lt;YourTenant&gt;.onmicrosoft.com and sign in with the credentials provided to you.
 
-15. Disable the password expiration for the Teams Room account **NY-TeamsRoom1** by running the following cmdlet:
+14. Disable the password expiration for the Teams Room account **NY-TeamsRoom1** by running the following cmdlet:
 
     ```powershell
     Get-AzureADUser | Where {$_.DisplayName -eq "NY-TeamsRoom1"} | Set-AzureADUser -PasswordPolicies DisablePasswordExpiration
     ```
-16. Close the PowerShell window.
+15. Close the PowerShell window.
 
-17. Open **Microsoft Edge**, maximize the window and navigate to the **Microsoft 365 admin center** at [**https://admin.microsoft.com/**](https://admin.microsoft.com/).
+16. Open **Microsoft Edge**, maximize the window and navigate to the **Microsoft 365 admin center** at [**https://admin.microsoft.com/**](https://admin.microsoft.com/).
 
-18. On the **Pick an account** page, select the **MOD Administrator** (admin@&lt;YourTenant&gt;.onmicrosoft.com) and sign in with the provided credentials.
+17. On the **Pick an account** page, select the **MOD Administrator** (admin@&lt;YourTenant&gt;.onmicrosoft.com) and sign in with the provided credentials.
 
-19. In the **Microsoft 365 admin center** from the left navigation pane, under **Billing** select **Purchase services**.
+18. In the **Microsoft 365 admin center** from the left navigation pane, under **Billing** select **Purchase services**.
 
-20. In the **Search** box on the right, type **Meeting Room** and then hit Enter.
+19. In the **Search** box on the right, type **Meeting Room** and then hit Enter.
 
-21. In the results page, locate the **Collaboration and communication** section, and under **Microsoft Teams Rooms Standard** tile, select **Details** and then select **Get free trial**.
+20. In the results page, locate the **Collaboration and communication** section, and under **Microsoft Teams Rooms Standard** tile, select **Details** and then select **Start free trial**.
 
-22. In the **Check out** page, select **Try now**, and in the **order receipt** page, select **Continue**.
+21. In the **Check out** page, select **Try now**, and in the **order receipt** page, select **Continue**.
 
-23. In the **Microsoft 365 admin center** from the left navigation pane, select **Users**, and then choose **Active Users**.
+22. In the **Microsoft 365 admin center** from the left navigation pane, select **Users**, and then choose **Active Users**.
 
-24. Select the NY-TeamsRoom1@&lt;YourTenant&gt;.onmicrosoft.com account, and then select the **Licenses and Apps** tab.
+23. Select the NY-TeamsRoom1@&lt;YourTenant&gt;.onmicrosoft.com account, and then select the **Licenses and Apps** tab.
 
-25. In the NY-TeamsRoom1@&lt;YourTenant&gt;.onmicrosoft.com page, under the **Licenses and Apps** tab, select **Microsoft Teams Rooms Standard** and then select **Save changes**.
+24. In the NY-TeamsRoom1@&lt;YourTenant&gt;.onmicrosoft.com page, under the **Licenses and Apps** tab, select **Microsoft Teams Rooms Standard** and then select **Save changes**.
 
-26. Close all open windows.
+25. Close all open windows.
 
 You have successfully created, configured, and licensed a Microsoft Teams Room service account, which is a prerequisite for deploying a Microsoft Teams Room system.
 

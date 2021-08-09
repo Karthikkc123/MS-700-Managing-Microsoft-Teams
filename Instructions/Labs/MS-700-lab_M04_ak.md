@@ -66,19 +66,33 @@ You will create the new Microsoft 365 Group named "IT-Department" and then add t
 
 2. Create and configure a new Microsoft 365 group with the following settings:
 
-	- Name: **IT-Department**
+      - Group type: leave default
 
-	- Description: **All staff of the IT-Department**
+   Under **Set up the basics**
+        
+      - Name: **IT-Department**
 
-	- Owners: **Joni Sherman**
+      - Description: **All staff of the IT-Department**
+	
+   Under **Assign owners**
 
-	- Group email address: **IT-Department**@&lt;YourTenant&gt;.onmicrosoft.com
+      - Owners: **Joni Sherman**
 
-	- Privacy: **Private – Only members can see group content**
+   Under **Add Members**
 
-	- Create a team for this group: **Clear the checkbox**
+      - Members: **Alex Wilber, Allan Deyoung, Lynne Robbins** and **Megan Bowen**
+	
+   Under **Add Settings**
 
-	- Members: **Alex Wilber, Allan Deyoung, Lynne Robbins** and **Megan Bowen**
+      - Group email address: **IT-Department**@&lt;YourTenant&gt;.onmicrosoft.com
+
+      - Privacy: **Private – Only members can see group content**
+
+      - Create a team for this group: **Clear the checkbox**
+
+   Under **Review and finish adding group**
+ 
+      - Review the changes and click on **Create Group**
 
 3. Close the **Microsoft 365 admin center**.
 
@@ -94,7 +108,7 @@ To test the self-service capabilities of Teams, in this task, Megan Bowen will s
 
 3. Create a new team with the following settings:
 
-	- Type: **Build a team from scratch**
+	- Type: **Create a team from scratch**
 
 	- Privacy: **Public**
 
@@ -116,7 +130,7 @@ In this task, Lynne Robbins will continue testing the self-service capabilities 
 
 2. Create a new team with the following settings:
 
-	- Type: **Build a team from scratch**
+	- Type: **Create a team from scratch**
 
 	- Privacy: **Private**
 
@@ -172,6 +186,10 @@ In this task you will create via the Teams PowerShell a new team **"CA-Office"**
 
 3. Run the following cmdlet to connect to Microsoft Teams in your tenant:
 
+   ```powershell
+   Install-Module -Name MicrosoftTeams -Force -AllowClobber
+   ```
+   
    ```powershell
    Connect-MicrosoftTeams
    ```
@@ -677,7 +695,7 @@ As a part of your system administrator role, you need to review access to resour
 13. In the middle of the page select **+ New access review** and follow the steps below to create a new Access review.
 
 	- On the **Review type** section of the **New access review** page, select the radio button beside **Select teams + Groups**
-	- select **Select goroup(s)** and chose the Group: **IT-Department**
+	- select **Select group(s)** and chose the Group: **IT-Department**
 	- select the radio button beside **Guest users only**
 	- select **Next:Reviews**
 
@@ -715,6 +733,8 @@ As a part of your system administrator role, you need to review access to resour
 23. If a welcome screen appears, close it.
 
 24. In the middle of the page, you will see an Email from **Microsoft Azure** with the topic **Action required: Review group access by &lt;local date + 7 days in the future&gt;**, then select this Email.
+
+ **Note:** It may take few minutes for the Email to appear.
 
 25. Select the **Start review** button in this Email.
 
