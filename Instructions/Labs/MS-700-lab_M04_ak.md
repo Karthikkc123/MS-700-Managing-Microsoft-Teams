@@ -108,7 +108,7 @@ To test the self-service capabilities of Teams, in this task, Megan Bowen will s
 
 3. Create a new team with the following settings:
 
-	- Type: **Build a team from scratch**
+	- Type: **Create a team from scratch**
 
 	- Privacy: **Public**
 
@@ -734,7 +734,7 @@ As a part of your system administrator role, you need to review access to resour
 
 24. In the middle of the page, you will see an Email from **Microsoft Azure** with the topic **Action required: Review group access by &lt;local date + 7 days in the future&gt;**, then select this Email.
 
-**Note:** It may take few minutes for the Email to appear.
+ **Note:** It may take few minutes for the Email to appear.
 
 25. Select the **Start review** button in this Email.
 
