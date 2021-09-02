@@ -304,9 +304,9 @@ You will create the new Microsoft 365 Group named "IT-Department," and then add 
 
 2. Open **Microsoft Edge**, maximize the window and navigate to the **Microsoft 365 admin center** at [**https://admin.microsoft.com/**](https://admin.microsoft.com/) as **Joni Sherman** (JoniS@&lt;YourTenant&gt;.onmicrosoft.com).
 
-3. In the Microsoft 365 admin center, select the navigation menu in the upper-left, select **Groups** > **Active** **Groups**.
+3. In the Microsoft 365 admin center, select the navigation menu in the upper-left, select **Teams & groups** > **Active teams & groups**.
 
-4. Select **Add a group** in the **Active** **groups** window to open the **Add a group** page.
+4. Select **Add a group** in the **Active teams and groups** window to open the **Add a group** page.
 
 5. Select the group type **Microsoft 365 (recommended)** and select **Next**.
 
@@ -315,8 +315,6 @@ You will create the new Microsoft 365 Group named "IT-Department," and then add 
 	- Name: **IT-Department**
 
 	- Description: **All staff of the IT-Department**
-
- 
 
 7. Select **Next**.
 
