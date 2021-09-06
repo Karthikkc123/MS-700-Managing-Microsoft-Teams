@@ -214,21 +214,21 @@ To avoid administrative overhead with managing large numbers of policies individ
 
 3. In the left-hand navigation pane, select **Policy packages** to display existing policy packages.
 
-4. Review the existing policy packages. Afterwards select **Firstline worker** to edit the policy package.
+4. Review the existing policy packages. Afterwards select **Frontline worker** to edit the policy package.
 
-5. From the list of assigned policies, select **Firstline_Worker** right from **Messaging policy**.
+5. From the list of assigned policies, select **Frontline_Worker** right from **Messaging policy**.
 
 6. Select **Edit** from the upper right corner to change the policy settings.
 
 7. Select the switch right from **Send urgent messages using priority notifications** to **On** and select **Save**.
 
-8. Back on the list of assigned policies, select **Firstline_Worker** right from **Calling policy**.
+8. Back on the list of assigned policies, select **Frontline_Worker** right from **Calling policy**.
 
 9. Select the switch right from **Prevent toll bypass and send calls through the PSTN** and **Busy on busy is available when in a call** to **On** and select **Save**.
 
 10. Back on the list of assigned policies again, select **Back** to go to the Policy packages overview.
 
-11. The checkmark left from the **Firstline worker** policy package is still active. Select **Manage users** from the top pane to open the **Manage users** right-side pane.
+11. The checkmark left from the **Frontline worker** policy package is still active. Select **Manage users** from the top pane to open the **Manage users** right-side pane.
 
 12.  Type "Allan" into the search bar, select **Add** right from **Allan Deyoung** and **Apply**.
 
@@ -236,7 +236,7 @@ To avoid administrative overhead with managing large numbers of policies individ
 
 14. In the line of Allan Deyoung, select **View policies**.
 
-15. Below Assigned policies you can now see the different **Firstline_Worker** policies and below **Policy package** the **Firstline worker** package.
+15. Below Assigned policies you can now see the different **Frontline_Worker** policies and below **Policy package** the **Frontline worker** package.
 
 You have successfully modified included policies from an existing policy package and assigned the package to a single user. This will help you assign the same set of policies to a group of users working in the same role or requiring the same access.
 
