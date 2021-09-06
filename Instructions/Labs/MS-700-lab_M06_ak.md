@@ -158,7 +158,7 @@ As part of your pilot project for setting up the events and meetings in your org
 
 6. Select the **Global (Org-wide default)** policy to change the settings for all users.
 
-7. On the **Meetings policies\Global** page, review the available settings, and under **Audio &amp; Video** section, use the slider to turn **Off** the **Allow cloud recording** setting. Select **Save**.
+7. On the **Meetings policies\Global** page, review the available settings, and under **Recording and transcription** section, use the slider to turn **Off** the **Allow cloud recording** setting. Select **Save**.
 
 You have successfully modified the Global (Org-wide default) meeting policy and disabled the recording functionality for meetings. It will take some time for the changes to be applied to the users, so you will continue with the next task and test the configured settings at the end of this lab.
 
@@ -340,7 +340,7 @@ As part of your pilot project for calling functionalities with Microsoft Teams, 
 
 4. Select the **Global (Org-wide default)** policy to edit the default settings.
 
-5. In **Calling policies\Global**, use the dropdown menu right to **Voicemail is available for routing inbound calls** and select **Disabled**. Then select **Save**.
+5. In **Calling policies\Global**, use the dropdown menu right to **Voicemail is available for routing inbound calls** and select **Not enabled**. Then select **Save**.
 
 6. Back on the **Calling policies** page, select **+ Add** on the top pane, to create a new policy.
 
@@ -480,7 +480,7 @@ As Teams admin, you were tasked to create an auto attendant with a transcribed w
 
 11. On the **Call flow** page, configure the following:
 
-	- First play a greeting message: **Type in the greeting message**
+	- First play a greeting message: **Add a greeting message**
 
 	- Type in : **Welcome. The person you called is currently on vacation, your call will be redirected to an operator.**
 
@@ -500,7 +500,7 @@ As Teams admin, you were tasked to create an auto attendant with a transcribed w
 
 	- Leave **Saturday** and **Sunday** blank.
 
-	- First play a greeting message: **Type in a greeting message**
+	- First play a greeting message: **Add a greeting message**
 
 	- Type in: **Thank you for your call, our business hours are Monday to Friday, 08:00 AM to 04:00 PM.**
 
@@ -546,7 +546,7 @@ In this task you will activate the Calling Plan Add-on Trial for your tenant so 
 
 5. Scroll to the bottom of the page and select **Add-ons**.
 
-6. Scroll down until you see **Microsoft 365 Domestic Calling Plan Trial** and select **Details**.
+6. Scroll down until you see **Microsoft 365 Domestic Calling Plan for US and Canada Trial** or search for it in search box and select **Details**.
 
 7. Select **Get free trial**.
 
@@ -604,7 +604,7 @@ In this task you will order a phone number to a user with an assigned Calling Pl
 
 11. For **Quantity**  select 1.
 
-12. Select **Next**, then **Finish**.
+12. Select **Next**, Select **Place Order**and then click on **Finish**.
 
 **Note:** It might take some time for the phone numbers to show up. You can check your order from the **Order history** tab.
 
