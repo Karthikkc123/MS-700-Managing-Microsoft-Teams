@@ -47,7 +47,7 @@ Please note that odl_userXXXXX@<YourTenant>.onmicrosoft.com is your administrato
 
 In this task, you will use the default global admin to login to the Microsoft 365 admin center and assign several teams admin roles to different users. This task is crucial for the following tasks and exercises because you will perform most of the tasks in context of Joni Sherman’s account.
 
-1. Sign in to the **Microsoft 365 admin center** ([**https://admin.microsoft.com**](https://admin.microsoft.com/)) using **MOD Administrator** (admin@&lt;YourTenant&gt;.onmicrosoft.com).
+1. Connect to the **Client 1 VM**, Sign in to the **Microsoft 365 admin center** ([**https://admin.microsoft.com**](https://admin.microsoft.com/)) using **MOD Administrator** (admin@&lt;YourTenant&gt;.onmicrosoft.com).
 
 2. Assign the role of the **Teams Administrator** to **Joni Sherman**.
 
@@ -58,6 +58,34 @@ In this task, you will use the default global admin to login to the Microsoft 36
 5. Leave the client open at the **Microsoft 365 admin center**.
 
 You have now successfully assigned the Teams admin role to Joni Sherman and the Teams communications support engineer to Allan Deyoung. Proceed to the next task.
+
+#### Check license assignment of your users**
+
+In this task, you will check the license assignment of all users participating in the pilot. At the end of the task you will confirm that all pilot users are licensed correctly and Alex Wilber’s location is updated to Canada as preparation for a later task.
+
+1. Connect to the **Client 1 VM** and browse to Microsoft 365 admin center (https://admin.microsoft.com/) as **MOD Administrator**.
+
+2. Update **Alex Wilber's** location to **Canada**
+
+    1. On the **Users** > **Active users** page, select the name of **Alex Wilber**.
+
+    2. Select **Licenses and Apps** tab. 
+
+    3. Select the dropdown menu under **Select location**, and update to **Canada**. 
+
+    4. Select **Save changes**. 
+
+3. Check **Alex Wilber's** licenses
+
+    1. On the same tab, under **Licenses** section, verify that **Enterprise Mobility + Security E5** and **Office 365 E5** are both selected.
+
+    2. Select **Apps** to expand All licenses.
+
+    3. Scroll down the list of all apps, and verify **Microsoft Teams** is selected. 
+    
+4. You can repeat the same steps to check other users' licenses. Do not change their locations. 
+
+You have successfully validated that all users participating in the pilot own Teams licenses and are ready to start working with Teams. You have also changed the location of Alex Wilber to Canada, as a preparation for a later task. Continue with the next task. 
 
 
 ### Create groups and teams
