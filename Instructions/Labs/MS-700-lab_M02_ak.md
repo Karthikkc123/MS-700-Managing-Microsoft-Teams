@@ -216,210 +216,167 @@ You have successfully changed your tenants Azure AD settings and activated sensi
    
 #### Task 2 - Create sensitivity labels for Teams
 
-After activating sensitivity labels for groups, you will now create three sensitivity labels. In this task, you will create three sensitivity labels "General," "Internal," and "Confidential." For each of them, you will create appropriate user and admin descriptions.
+After activating sensitivity labels for groups, you will now create three sensitivity labels. In this task, you will create three sensitivity labels **General**, **Internal**, and **Confidential**.  For each of them, you will create appropriate user and admin descriptions.
 
-1. You are still connected to the **Client 1 VM**.
+1. Connect to the **Client 1 VM** and browse to Microsoft 365 compliance center (https://compliance.microsoft.com/) as **MOD Administrator**.
 
-2. Open **Microsoft Edge**, maximize the window and navigate to the **Microsoft 365 compliance center** at [**https://compliance.microsoft.com/**](https://compliance.microsoft.com/).
+2. In left navigation of the Microsoft 365 admin center, select **Information protection**.
 
-3. On the **Pick an account** page, select the **MOD Administrator** ([admin@&lt;YourTenant&gt;.onmicrosoft.com](mailto:admin@%3cYourTenant%3e.onmicrosoft.com)) and sign in with the provided credentials.
+3. Select **Turn on now** next to the following warning message to activate content processing in Office online files.
 
-4. In the **Microsoft 365 compliance center**, on the left navigation pane, scroll down and select …**Show all** and select **Information protection** from the expanded left side navigation pane.
+	*Your organization has not turned on the ability to process content in Office online files that have encrypted sensitivity labels applied and are stored in OneDrive and SharePoint. You can turn on here, but note that additional configuration is required for Multi-Geo environments. Learn more*
 
-5. On the top part of the page, you can see a warning message in a yellow box that states: Your organization has not turned on the ability to process content in Office online files that have encrypted sensitivity labels applied and are stored in OneDrive and SharePoint. You can turn on here, but note that additional configuration is required for Multi-Geo environments. Select **Turn on now** to activate content processing in Office online files.
+4. Create the first sensitivity label - **General**
 
-6. Select **+ Create a label** to create a new sensitivity label.
+	Select **+ Create a label** and follow the wizard with the following information: 
+	
+	1. In the **Name &description** section, enter the following information:
+		- **Name**: General
+		- **Display name**: General
+		- **Description for users**: General information without protection.
+		- **Description for admins**: General information without encryption, marking or sharing restriction settings activated.
 
-7. On the **Name and create a tooltip for your label** page, enter the following information:
+	2. In the **Scope** section, select **Files &amp; emails** and **Groups &amp; Sites** 
 
-	- **Name**: General
+	3. In the **Files & emails** and **Auto-labeling** sections, leave the settings as default.
+	
+	4. In the **Groups & sites** section, select both checkboxes. 
+	
+		* **Privacy and external user access settings** 
+		* **External sharing and Conditional Access settings** 
 
-	- **Display name**: General
+	5. In the **Privacy & external user access** section, select **None** and check the checkbox of **Let Microsoft 365 group owners add people outside the organization to the group**. 
 
-	- **Description for users**: General information without protection
+	6. In the **External sharing & device access** section
+	
+		* Select **Control external sharing from labeled SharePoint sites** > **Anyone**.
 
-	- **Description for admins**: General information without encryption, marking or sharing restriction settings activated
+		* Select **Use Azure AD Conditional Access to projtect labeled SharePoint sites** >  **Allow full access from desktop apps, mobile apps, and the web**.
 
-8. Select **Next**.
+	7. In the **Azure Purview assets** section, leave the settings as default. 
 
-9. Select **Files &amp; emails** and **Groups &amp; Sites** on the **Scope** page and select **Next**.
+	8. Select **Create label** > **Done**.
 
-10. Do not make any changes on the **Choose protection settings for files and emails** page and select **Next**.
+5. Create the second sensitivity label - **Internal**
 
-11. Do not make any changes on the **Auto-labeling for Office apps** page and select **Next**.
+	Select **+ Create a label** and follow the wizard with the following information: 
+	
+	1. In the **Name &description** section, enter the following information:
+		- **Name**: Internal
+		- **Display name**: Internal
+		- **Description for users**: Internal information with sharing protection
+		- **Description for admins**: Internal information with moderate encryption, marking and sharing restriction settings activated
 
-12. On the **Group &amp; Sites** page, select both boxes **Privacy and external user access settings** and **External sharing and Conditional Access settings** and select **Next**.
+	2. In the **Scope** section, select **Files &amp; emails** and **Groups &amp; Sites** 
 
-13. On the **Define privacy and external user access settings**  page select the following settings and then select **Next**:
+	3. In the **Files & emails** section, select both checkboxes. 
+		* **Encrypt files and emails**
+		* **Mark the content of files**
+	
+	4. In the **Encryption** section, 
 
-	- **Privacy**: None-Team and group members can set the privacy settings themselves.
+		* Select **configure encryption settings**
+		* Assign permissions now or let users decide: **Assign permissions now**.
+		* User access to content expires: **Never**.
+		* Allow offline access: **Always**.
+		* Select **Assign permissions**, and select **+ Add all users and groups in your organization**.
 
-	- **External users access**: Select Let Microsoft 365 group owners add people outside the organization to the group.
+	5. In the **Content marking** sections, 
 
-14. On the **Define external sharing and device access settings** page select the following setting and then select **Next**.
+		* Select the slider and the checkbox **Add a watermark**.
+		* Select **Customize text** and enter the following to the **Watermark text** box: **Internal use only**
 
-	- **Unmanaged devices:** Allow full access from desktop apps, mobile apps, and the web.
+	6. In the **Auto-labeling** sections, leave the settings as default.
+	
+	7. In the **Groups & sites** section, select both checkboxes. 
+	
+		* **Privacy and external user access settings** 
+		* **External sharing and Conditional Access settings** 
 
-15. Review your settings and select **Create label** to finish the new label creation.
+	8. In the **Privacy & external user access** section, select **None**. 
 
-16. When the **Your label was created** is displayed, select **Done**.
+	9. In the **External sharing & device access** section
+	
+		* Select **Control external sharing from labeled SharePoint sites** > **Existing guests**.
 
-17. You should now see your newly created label "**General**" on the **Labels** dashboard. Select **+ Create a label** again, to create another sensitivity label.
+		* Select **Use Azure AD Conditional Access to projtect labeled SharePoint sites** >  **Allow limited web-only access**.
 
-18. On the **Name and create a tooltip for your label** page, enter the following information:
+	10. In the **Azure Purview assets** section, leave the settings as default. 
 
-	- **Name**: Internal
+	11. Select **Create label** > **Done**.
 
-	- **Display name**: Internal
+6. Create the second sensitivity label - **Confidential**
 
-	- **Description for users**: Internal information with sharing protection
+	Select **+ Create a label** and follow the wizard with the following information: 
+	
+	1. In the **Name &description** section, enter the following information:
+		- **Name**: Confidential
+		- **Display name**: Confidential
+		- **Description for users**: Confidential information with all protection
+		- **Description for admins**: Confidential information with all restrictive encryption, marking and sharing settings activated
 
-	- **Description for admins**: Internal information with moderate encryption, marking and sharing restriction settings activated
+	2. In the **Scope** section, select **Files &amp; emails** and **Groups &amp; Sites** 
 
-19. Select **Next**.
+	3. In the **Files & emails** section, select both checkboxes. 
+		* **Encrypt files and emails**
+		* **Mark the content of files**
+	
+	4. In the **Encryption** section, 
 
-20. Select **Files &amp; emails** and **Groups &amp; Sites** on the **Define the scope for this label** page and select **Next.**
+		* Select **configure encryption settings**
+		* Assign permissions now or let users decide: **Assign permissions now**.
+		* User access to content expires: **Never**.
+		* Allow offline access: **Never**.
+		* Select **Assign permissions**, and select **+ Add all users and groups in your organization**.
 
-21. On the **Choose protection settings for files and emails** page, select both boxes **Encrypt files and emails** and **Mark the content of files** and select **Next**.
+	5. In the **Content marking** sections, 
 
-22. On the **Encryption** page, select **configure encryption settings** and perform the following configuration settings:
+		* Select the slider and the checkbox **Add a watermark**.
+		* Select **Customize text** and enter the following to the **Watermark text** box: **Confidential.**
 
-	- Assign permissions now or let users decide: **Assign permissions now**.
+	6. In the **Auto-labeling** sections, leave the settings as default.
+	
+	7. In the **Groups & sites** section, select both checkboxes. 
+	
+		* **Privacy and external user access settings** 
+		* **External sharing and Conditional Access settings** 
 
-	- User access to content expires: **Never**.
+	8. In the **Privacy & external user access** section, select **Private**. 
 
-	- Allow offline access: **Always**.
+	9. In the **External sharing & device access** section
+	
+		* Select **Control external sharing from labeled SharePoint sites** > **Only people in your organization**.
 
-23. Select **Assign permissions** below **Assign permissions to specific users and groups**.
+		* Select **Use Azure AD Conditional Access to projtect labeled SharePoint sites** >  **Block access**.
 
-24. On the right-side pane, select **+ Add all users and groups in your organization**.
+	10. In the **Azure Purview assets** section, leave the settings as default. 
 
-25. Select **Save** and **Next** to finish the Encryption settings.
+	11. Select **Create label** > **Done**.
 
-26. On the **Content marking** page, select the slider and the checkbox **Add a watermark**.
+7. Publish sensitivity labels
 
-27. Select **Customize text** to open the right-side pane.
+	1. On the **Information protection** page, select **Publish labels** from the top menu.
 
-28. Enter the following to the **Watermark text** box: **Internal use only**
+	2. In the **Labels to publish** section, select **Choose sensitivity labels to publish**. Select all of the labels and select **Add**.
 
-29. Select **Save** and **Next**.
+	3. In the **Users and groups** section, keep the default settings. 
 
-30. On the **Auto-labeling for Office apps** page, do not select the slider and select **Next**.
+	4. In the **Settings** section, keep the default settings. 
 
-31. On the **Define protection settings for groups and sites** page, select both boxes **Privacy and external user access settings** and **External sharing and Conditional Access settings** and select **Next**.
+	5. In the **Document** section, select **General** in the dropdown menu **Apply this label by default to documents**.
 
-32. On the **Define privacy and external user access settings** page, select the following settings and then select **Next**:
+	6. In the **Emails** section, select **General** in the dropdown menu **Apply this label by default to emails**. 
 
-	- **Privacy**: None-Team and group members can set the privacy settings themselves.
+	7. In the **Sites and Groups** section, select **General** in the dropdown menu **Apply this label by default to groups and sites**.	
 
-	- **External users access**: Leave the box unchecked.
+	8. In the **Name** section, enter the following:
 
-33. On the **external sharing** page, select the following setting and then select **Next**:
+		- **Name**: All company sensitivity labels
 
-	- **Unmanaged devices:** Allow limited, web-only access.
+		- **Enter a description for your sensitivity label policy**: Default sensitivity labels for all users in the company.
 
-34. Select **Next**.
-
-35. Review your settings and select **Create label** to finish the new label creation.
-
-36. When the **Your label was created** is displayed, select **Done**.
-
-37. You should now see your newly created label "**Internal"** on the **Labels** dashboard. Select **+ Create a label** again, to create another sensitivity label.
-
-38. On the **Name and create a tooltip for your label** page, enter the following information:
-
-	- **Name**: Confidential
-
-	- **Display name**: Confidential
-
-	- **Description for users**: Confidential information with all protection
-
-	- **Description for admins**: Confidential information with all restrictive encryption, marking and sharing settings activated
-
-39. Select **Next**.
-
-40. Select **Files &amp; emails** and **Groups &amp; Sites** on the **Define the scope for this label** page and select **Next**.
-
-41. On the **Choose protection settings for files and emails** page, check both boxes **Encrypt files and emails** and **Mark the content of files** and select **Next**.
-
-42. On the **Encryption** page select **configure encryption settings**:
-
-	- Assign permissions now or let users decide: **Assign permissions now**
-
-	- User access to content expires: **Never**
-
-	- Allow offline access: **Never**
-
-43. Select **Assign permissions** below **Assign permissions to specific users and groups**.
-
-44. On the right-side pane, select **+ Add all users and groups in your organization**.
-
-45. Select **Choose permissions** and select **Reviewer** from the dropdown menu, to restrict permissions.
-
-46. Select **Save** twice.
-
-47. Select **Next** to finish the Encryption settings.
-
-48. On the **Content marking** page, select the slider and the checkbox **Add a watermark**.
-
-49. Select **Customize text** to open the right-side pane.
-
-50. Enter the following to the **Watermark text** box: Confidential.
-
-51. Select **Save** and **Next**.
-
-52. On the **Auto-labeling for Office apps** page, do not select the slider and select **Next**.
-
-53. On the **Define protection settings for groups and sites** page, check both boxes **Privacy and external user access settings** and **External sharing and Conditional Access settings** and select **Next**.
-
-54. On the **privacy &amp; external** **users**  page, select the following settings and then select **Next**:
-
-	- **Privacy**: Private. Only team owners and members can access the group or team and, and only owners can add members.
-
-	- **External users access**: Leave the box unchecked.
-
-55. On the **external sharing** page select the following setting and then select **Next**:
-
-	- **Unmanaged devices:** Allow limited, web-only access.
-
-56. Select **Next**.
-
-57. Review your settings and select **Create label** to finish the new label creation.
-
-58. When the **Your label was created** is displayed, select **Done**.
-
-59. Back on the **Information protection** page, select **Publish labels** from the top menu.
-
-60. On the **Choose sensitivity labels to publish** page, select **Choose sensitivity labels to publish**.
-
-61. Select the checkbox left from **Select all** and select **Add** to close the right-side pane.
-
-62. Select **Next**.
-
-63. On the **Publish to users and groups** page, do not make any changes to publish the label to all users. 
-
-64. Select **Next**.
-
-65. On the **Policy settings** page, open the dropdown menu below **Apply this label by default to documents and email** and select **General** to use it as the default label for document and email.
-
-66. Below **Apply this label by default to groups and sites**, also select the dropdown and select **General**.
-
-67. Select **Next**.
-
-68. On the **Name you policy** page, enter the following:
-
-	- **Name**: All company sensitivity labels
-
-	- **Enter a description for your sensitivity label policy**: Default sensitivity labels for all users in the company.
-
-69. Select **Next**.
-
-70. Review your settings and select **Submit** to publish the labels.
-
-71. When **New policy created** is displayed, select **Done**.
-
-72. Close the browser window.
-
+	9. Select **Submit** > **Done**.
+	
 In this task, you have created and published three new sensitivity labels available for all users, which can be assigned to new and existing Teams.
 
 #### Task 3 - Assign sensitivity labels to Teams
