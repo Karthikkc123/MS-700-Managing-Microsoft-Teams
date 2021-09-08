@@ -41,7 +41,7 @@ Please note that odl_userXXXXX@<YourTenant>.onmicrosoft.com is your administrato
 
 In this task, you will use the default global admin to login to the Microsoft 365 admin center and assign several teams admin roles to different users. This task is crucial for the following tasks and exercises because you will perform most of the tasks in context of Joni Sherman’s account.
 
-1. Sign in to the **Microsoft 365 admin center** ([**https://admin.microsoft.com**](https://admin.microsoft.com/)) using **MOD Administrator** (admin@&lt;YourTenant&gt;.onmicrosoft.com).
+1. Connect to the **Client 1 VM**, Sign in to the **Microsoft 365 admin center** ([**https://admin.microsoft.com**](https://admin.microsoft.com/)) using **MOD Administrator** (admin@&lt;YourTenant&gt;.onmicrosoft.com).
 
 2. Assign the role of the **Teams Administrator** to **Joni Sherman**.
 
