@@ -240,143 +240,72 @@ To avoid administrative overhead with managing large numbers of policies individ
 
 You have successfully modified included policies from an existing policy package and assigned the package to a single user. This will help you assign the same set of policies to a group of users working in the same role or requiring the same access.
 
-#### Task 5 - Add a custom line of business app
+#### Task 5 - Built a flow using Power Automate in Teams
 
-In this task, you will add a custom line of business app required for your company Contoso Ltd. for all users of your tenant. You find sample LOB app at: https://github.com/OfficeDev/msteams-sample-line-of-business-apps-csharp.
+In this task, you will create an issue report system by using Power Automate in Teams. When users fill out the form from the **Contoso** org-wide team, the flow will send a message to notify members in the **IT-Department** team. 
 
-1. Connect to the **Client 1 VM** with the credentials that have been provided to you.
+1. Connect to the **Client 1 VM**.
 
-2. Select the **Edge Browser** icon from the taskbar. In your browser go to the following link and download the custom line of business app as zip package:
+2. Create a form
 
-	- Go to the following link: [**Notification Bot**](https://github.com/OfficeDev/msteams-sample-line-of-business-apps-csharp/blob/master/Cross%20Vertical/NotificationBot/Manifest/Notification%20App.zip).
+	1. Browse to the Forms web client (https://www.office.com/launch/forms) as **Joni Sherman**  (JoniS@&lt;YourTenant&gt;.onmicrosoft.com).
+	
+	2. In the Froms web client, select **+ New Form**.
 
-	- Select **Download** and **Save**, to download the file to the **Downloads** folder.
+	3. Select on **Untitled form** and enter the following information:
+	
+		* Input your title here: **Submit a ticket**.
+		* Enter a description: **Please provide the information. Our member from IT-Department will contact you as soon as possible.**
 
-3. Navigate to the **Microsoft Teams web client** page by entering the following URL in the address bar: [**https://teams.microsoft.com/**](https://teams.microsoft.com/)
+	4. Select **+ Add new** > **Text**.
+	5. In the question textbox, enter **What is the issue?**
 
-4. On the **Pick an account** page, select the **Joni Sherman** (JoniS@&lt;YourTenant&gt;.onmicrosoft.com) and sign in with the provided credentials.
+3. Install **Power Automate** in Teams. 
 
-5. On the teams landing page, select **Use the web app instead**.
+	1. Browse to the Teams web client (https://teams.microsoft.com/) as **Joni Sherman**  (JoniS@&lt;YourTenant&gt;.onmicrosoft.com).
 
-6. Select **Apps** from the side pane.
+	2. In left navigation of the Teams client, select **Apps** and search for **Power Automate**.
 
-7. Scroll down the list of **Apps**, select **Upload a custom app** and **Upload for Contoso**.
+	3. Select **Power Automate** app, and select **Add**
 
-8. A file select window appears. Navigate to **Downloads** and select **Notification App.zip**.
+4. Create a flow
 
-9. Go back to **Apps** from the side pane.
+	1. In left navigation of the Teams client, select **Power Automate**.
 
-10. Select **Built for Contoso**.
+	2. Select **Create** tab from the top menu. 
 
-11. Note the **NotificationBot** app.
+	3. Select the template **Notify a team when a new Forms response is submitted** and select **Continue**
 
-12. Select **Joni Shermans** picture in the upper right corner and select **Sign out**. Close the Edge browser.
+	4. Enter the flow name : **Report issue**. Select **Continue**.
 
-13. Connect to the **Client 2 VM** with the credentials that have been provided to you.
+	5. On the **Set up your flow** page, 
+	
+		* From the **The ID of the form you want to monitor** dropdown menu, select **Submit a ticket**. 
 
-14. Select the **Edge Browser** icon from the taskbar. In your browser go to the **Microsoft Teams web client** page by entering the following URL in the address bar: [**https://teams.microsoft.com/**](https://teams.microsoft.com/)
+		* From the **Team to notify** dropdown menu, select **IT-Department**.
 
-15. On the **Pick an account** page, select the **Lynne Robbins** (LynneR@&lt;YourTenant&gt;.onmicrosoft.com) and sign in with the provided credentials.
+		* From the **Channel to notify** dropdown menu, select **General**.
 
-16. On the teams landing page, select **Use the web app instead**.
+	6. Select **Create flow** > **Done**
 
-17. Go back to **Apps** from the side pane.
+5. Add the form to the **General** channel of **Contoso** team.
 
-18. Scroll down and select **Built for Contoso**.
+	1. Go to the **General** channel of **Contoso** team.
+	2. Add a tab by selecting **+** next to Wiki tab. 
+	3. Select **Forms** from the **Add a tab** window. 
+	4. Select **Add an existing form**, and select **Submit a ticket**.	
+	5. Select **Save**.
 
-19. Select **NotificationBot** and review the details.
+6. Test the flow
 
-20. Select **Add for me**, to test the custom app.
+	1. In the **General** channel of **Contoso** team, select **Fill|Submit a ticket** tab. 
+	2. On the **Submit a ticket** page, enter the following to the textbox:
+	
+		*I need help to create a team for external partners.*  
+	3. Select **Submit**.
+	4. Go to the **General** channel of the **IT-Department** team. You will see a post via Power Automate. 
 
-21. On the **Welcome to Notification Bot** conversation, select the dropdown menu and select **Weather**, and then select **Show Notification**.
-
-22. The weather forecast for your location is being displayed.
-
-23. Close all browser windows.
-
-You have successfully added a custom app to your tenant with the account of Joni Sherman, who is a Teams admin in your tenant. Afterwards, you have successfully tested the app availability with a regular user.
-
-#### Task 6 - Add a custom app from Microsoft Power Apps
-
-In this task, you will need to evaluate the integration of Power Apps into Teams by creating a new app from a template and integrate it into the IT-Department team. You will choose the Out of Office template and provide a fast option for IT-Department members to activate the Out of Office function for their mailbox.
-
-1. Connect to the **Client 1 VM** with the credentials that have been provided to you.
-
-2. Open Microsoft Edge, maximize the window and navigate to [**https://make.powerapps.com**](https://make.powerapps.com/) to access the **Power Apps** dashboard.
-
-3. On the **Pick an account** page, select the **Joni Sherman** (JoniS@&lt;YourTenant&gt;.onmicrosoft.com) and sign in with the provided credentials.
-
-4. Select **+ Create** from the left-side menu and scroll down to **Start from template**.
-
-5. Select the **Out of Office** tile with **Canvas app** text below to open the creation dialog.
-
-6. Below **App name** enter the following: **MyOofApp**.
-
-7. Select **Phone** below Format and **Create**.
-
-8. If you see a **Choose your country/region to get started** message, leave the default selection and select **Get started**.
-
-9. A new tab is opened. When the **Almost there…** frame appears, select **Allow**.
-
-10. When a **Welcome to Power Apps Studio** frame appears, select **Don’t show me this again** and **Skip**.
-
-11. When a **Preview features entering final validation** frame appears, select **Open app** to continue.
-
-12. When the app editor has loaded, select the paint bucket from the top pane and select your favorite color to change the background of the WelcomeScreen page of your app.
-
-13. Review the other app pages from the left-side pane, below **Tree view** but do not do any more changes.
-
-14. After reviewing the settings, select the play button (rectangle) from the upper right corner to test your app.
-
-15. Select **Create new**, enter the following values, and select **Next**:
-
-	- **Set response start time** the next day from 08:00 am.
-
-	- **Set response end time** the next day until 06:00 pm.
-
-	- **Title (optional)** I’m out of office.
-
-16. On the **Select response type** page, select **Business** and **Next**.
-
-17. On the **Select email access** page, select **Intermittent** and **Next**.
-
-18. On the **Select alternate contacts** page, select down arrow right from **Find contacts**, select IT-Department and select **Next**.
-
-19. Review the sample text, but do not select **Submit**. Select the **X** from the upper right corner instead.
-
-20. When you see a **Did you know?** frame, select **Don’t show me this again** and **Ok**.
-
-21. Select **File** from the upper left in the top pane and **Save as**.
-
-22. Change the default app name to **MyOofApp** and select **Save**.
-
-23. When you see the **All changes are saved.** message, you have successfully created a new Power App. Select **Share** to manage access to your app.
-
-24. On the **Share MyOofApp** page enter **Everyone** to the search box and select the **Everyone in Contoso**.
-
-25. Leave the default settings and select **Share** from the lower right of the page.
-
-26. Close the Edge browser and switch to Client 2 VM.
-
-27. Connect to the **Client 2 VM** with the credentials that have been provided to you.
-
-28. Select the **Edge Browser** icon from the taskbar. In your browser go to the **Microsoft Teams web client** page by entering the following URL in the address bar: [**https://teams.microsoft.com/**](https://teams.microsoft.com/)
-
-29. On the Pick an account page, select LynneR@&lt;YourTenant&gt;.onmicrosoft.com and sign in with the credentials provided.
-
-30. On the teams landing page, select **Use the web app instead**.
-
-31. Select the **General** channel below **IT-Department**.
-
-32. Select the **+** symbol from the top pane, enter **Power** to the search box and select **Power Apps**.
-
-33. Select **Add** to integrate Power Apps to your IT-Department team.
-
-34. On the next **Power Apps** page, select the **MyOofApp** and select **Save**.
-
-35. You have successfully pinned the **MyOofApp** to the **General** channel of your **IT-Department** team.
-
-In this task, you have successfully created a Power App and integrated it into a Teams channel. All members of the IT-Department team can now use the app in the tab to plan and create an Out of Office (Oof) message for their mailboxes.
+In this task, you have successfully created a flow from Power Automate in Teams, which notify the members in IT department when users submit a request ticket.
 
 ### **Exercise 3: Test configured policy settings**
 
