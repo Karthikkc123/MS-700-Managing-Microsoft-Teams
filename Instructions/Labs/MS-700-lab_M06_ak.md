@@ -53,9 +53,11 @@ In this task, you will use the default global admin to login to the Microsoft 36
 
 2. Assign the role of the **Teams Administrator** to **Joni Sherman**.
 
-3. Assign the role of the **Teams communication support engineer** to **Allan Deyoung**.
+3. Assign the role of the **Teams Device Administrator** to **Alex Wilber**.
 
-4. Leave the client open at the **Microsoft 365 admin center**.
+4. Assign the role of the **Teams Communication admin** to **Allan Deyoung**.
+
+5. Leave the client open at the **Microsoft 365 admin center**.
 
 You have now successfully assigned the Teams admin role to Joni Sherman and the Teams communications support engineer to Allan Deyoung. Proceed to the next task.
 
@@ -70,25 +72,40 @@ In real world scenarios, the Microsoft 365 Groups would already exist and your t
 
 You will create the new Microsoft 365 Group named "IT-Department" and then add the pilot members serving as a basis for your future teams and licensing.
 
-1. Sign in to the **Microsoft 365 admin center** ([**https://admin.microsoft.com**](https://admin.microsoft.com/)) as **Joni Sherman** (JoniS@&lt;YourTenant&gt;.onmicrosoft.com).
+1. Connect to the **Client 1 VM** and browse to the **Microsoft 365 admin center** (https://admin.microsoft.com/) as **Joni Sherman**  (JoniS@&lt;YourTenant&gt;.onmicrosoft.com).
 
-2. Create and configure a new Microsoft 365 group with the following settings:
+2. In the Microsoft 365 admin center, select **Groups** > **Active** **Groups**.
 
-	- Name: **IT-Department**
+3. On the **Active groups** page, select **Add a group**.
 
-	- Description: **All staff of the IT-Department**
+4. Follow the **Add a group** wizard with the following information:
 
-	- Owners: **Joni Sherman**
+    * Group type : Select **Microsoft 365 (recommended)**.
+    * Basics : 
+    	- Name: **IT-Department**
+    	- Description: **All staff of the IT-Department**
+    
+    * Owners : 
+        - Select **+ Assign owners** 
+        - Search and select **Joni Sherman**
+        - Select **Add(1)**, and then select **Next**.
 
-	- Group email address: **IT-Department**@&lt;YourTenant&gt;.onmicrosoft.com
+    * Members : 
+        - Alex Wilber
+        - Allan Deyoung
+        - Lynne Robbins
+        - Megan Bowen
 
-	- Privacy: **Private – Only members can see group content**
+    * Settings : 
+        - Enter **IT-Department** for Group email address. 
+        - Privacy : Private
+        - Uncheck **Create a team for this group**.
 
-	- Create a team for this group: **Clear the checkbox**
+5. Select **Create group** > **Close**.
 
-	- Members: **Alex Wilber, Allan Deyoung, Lynne Robbins** and **Megan Bowen**
+6. Wait a moment and select **Refresh** until the group is visible. You will see there is no Teams icon in the **Teams status** column.
 
-3. Close the **Microsoft 365 admin center**.
+7. Select the **IT-Department** group to review the settings and members. 
 
 The new Microsoft 365 Group with the name "IT-Department" was successfully created. Close the browser window and continue to the next task.
 
@@ -98,46 +115,45 @@ To test the self-service capabilities of Teams, in this task, Megan Bowen will s
 
 1. Connect to the **Client 2 VM** with the credentials that have been provided to you.
 
-2. Connect to a client and sign in to the Teams Desktop client using **Megan Bowen** (MeganB@&lt;YourTenant&gt;.onmicrosoft.com).
+2. Select the **Teams** icon on the taskbar to start the Teams Desktop client.
 
-3. Create a new team with the following settings:
+3. When prompted to **Enter your work, school or Microsoft account**. Sign in as **Megan Bowen** (MeganB@&lt;YourTenant&gt;.onmicrosoft.com).
 
-	- Type: **Build a team from scratch**
+4. In the Teams client, select **Join or create a team** from the lower left corner. 
 
-	- Privacy: **Public**
+5. Select **Create team** >**From scratch** > **Public**. Enter the team name **Teams Rollout** and select **Create**.
 
-	- Name: **Teams Rollout**
+6. On the **Add members to Teams Rollout** window, enter the following names and select **Add**. 
 
-	- Owners: **Joni Sherman** and **Megan Bowen**
+    * Alex Wilber
+    * Allan Deyoung
+    * Joni Sherman
+    * Lynne Robbins
 
-	- Members: **Alex Wilber**, **Allan Deyoung** and **Lynne Robbins**
+7. Select the dropdown menu next to Joni Sherman and switch from **Member** to **Owner**. 
 
-4. Close the Teams Desktop client.
+8. Select **Close**.
 
-You have successfully created a new team with the Teams Desktop client, added the project team members and you have made Joni Sherman a second owner of the team. Close the Teams client and continue with the next task.
+You have successfully created a new team from the Teams desktop client, added the project team members, and you have made Joni Sherman a team owner.
 
 #### Create a new team by using the web client
 
 In this task, Lynne Robbins will continue testing the self-service capabilities of Teams by using the Teams web client to create another team with the name "Sales". She will also add Megan Bowen as a member.
 
-1. Sign in to the Teams web client ([**https://teams.microsoft.com**](https://teams.microsoft.com/)) using **Lynne Robbins** (LynneR@&lt;YourTenant&gt;.onmicrosoft.com).
+1. Connect to the **Client 2 VM** with the credentials that have been provided to you.
 
-2. Create a new team with the following settings:
+2. Browse to the **Microsoft Teams web client** at [**https://teams.microsoft.com**](https://teams.microsoft.com/) and sign in as **Lynne Robbins** (LynneR@&lt;YourTenant&gt;.onmicrosoft.com).
 
-	- Type: **Build a team from scratch**
+4. Select **Join or create a team** from the lower left corner. 
 
-	- Privacy: **Private**
+5. Select **Create team** >**From scratch** > **Private**. Enter the team name **Sales** and select **Create**.
 
-	- Name: **Sales**
+6. On the **Add members to Sales** window, enter the following names and select **Add** > **Close**.
 
-	- Owners: **Lynne Robbins**
+    * Megan Bowen
 
-	- Members: **Megan Bowen**
-
-3. Close the Teams web client.
-
-You have successfully created a new team with the Teams web client. This is the end of lab 1. 
-
+The newly created team is displayed in the list of your teams. You have successfully created a new team with the Teams web client.
+ 
 ### **Exercise 1: Manage Live event and meetings experiences**
 
 Contoso organization has deployed Microsoft 365 and is testing pilot projects on collaboration and communication scenarios to meet business requirements. First, Teams admins need to configure meeting policies and schedule initial meetings. Then, business managers want to test the Live meetings option in Microsoft Teams in order to broadcast audio and video to large audiences.
@@ -177,8 +193,6 @@ In this task you need to sign in to the second client and create a meeting with 
 5. On the Microsoft Team page, hover the mouse over the meeting page, and select the three dots (…) for **More actions**.
 
 6. Note that **Start recording** option is visible but is dimmed, not available to be selected.
-
- 
 
 #### Task 3 - Configure meeting settings and restrict anonymous users from joining meetings
 
@@ -298,37 +312,7 @@ You have successfully created a live event and shared content with your attendee
 
 Contoso organization is using legacy PBX system. With introduction of Microsoft Teams, Contoso will migrate their legacy telephony system to Microsoft Phone System. Teams admins are responsible for evaluating and testing Microsoft Teams voice functionalities.
 
-#### Task 1 - Add a new emergency address
-
-In this task you will add a new emergency address "One Microsoft Way, Redmond, WA 98052, USA" for users in the United States. It is used to route emergency calls to the appropriate dispatch authorities and to assist in locating the emergency caller.
-
-1. Connect to the **Client 1 VM** and sign in with the Credentials that have been provided to you.
-
-2. You should still be in the **Teams admin center** and signed in as **Joni Sherman** (JoniS@&lt;YourTenant&gt;.onmicrosoft.com).
-
-3. On the left navigation pane select **Locations** and below select **Emergency addresses**.
-
-4. Select **+ Add** from the top pane to create a new emergency address.
-
-5. On the **Location\Add location** page, enter the following information:
-
-	- Put in a name for your location: **Contoso Emergency Address**
-
-	- Add a friendly description so you know why it was created: **Emergency Address for Contoso employees.**
-
-	- Country or region: **United States**
-
-	- Address: **1 Microsoft Way, Redmond, WA 98052** 
-
-      (You can enable **Edit the address manually**, and enter the address manually)
-
-6. Acknowledge the emergency calling disclaimer.
-
-7. Select **Save**.
-
-You have successfully created an emergency address that can be used for phone numbers.
-
-#### Task 2 - Create a calling policy
+#### Task 1 - Create a calling policy
 
 As part of your pilot project for calling functionalities with Microsoft Teams, you have the requirement that all pilot users receive access to the voicemail functionalities. You create and assign a new calling policy and configure the settings. However, all other users should not receive voicemail functionalities during the testing period. Therefore, you will edit the default policy to ensure that voicemail is disabled for all other users.
 
@@ -362,7 +346,7 @@ As part of your pilot project for calling functionalities with Microsoft Teams, 
 
 In this task, you have disabled voicemail for all users in the organizations, and then you have created a calling policy that will enable voicemail for several users.
 
-#### Task 3 - Create a call queue
+#### Task 2 - Create a call queue
 
 Contoso Ltd. has deployed Microsoft Teams voice functionalities throughout the organization. To deploy some automation for incoming support calls, the calling queue functionalities need to be tested before being rolled out. The following settings shall be configured for customers calling in:
 
@@ -436,7 +420,7 @@ Creating the new call queue may take some time, but you have successfully create
 
 **Note:** Because this call queue shall have a custom greeting, you need to upload some wav file for demonstration purposes. In real-world scenario, you would record and prepare a greeting audio file and upload the audio file as shown in this task.
 
-#### Task 4 - Create an auto attendant
+#### Task 3 - Create an auto attendant
 
 As Teams admin, you were tasked to create an auto attendant with a transcribed welcome message that will respond to customers outside of office hours. As some of your employees work in different time zones, the auto attendant informs a caller that the subscriber is currently on vacation and to call another person in the organization. Furthermore, the auto attendant informs callers about business hours.
 
@@ -524,15 +508,42 @@ You have successfully created a resource account for the auto attendant and then
 
 In this exercise you will set up one of your users with a Calling Plan Trial. You will need to start the trial, order a phone number from Microsoft as your provider and enable your user to use this phone number when making outgoing calls.
 
- 
 
 **Note:** The availability of Calling Plans varies based on different countries and regions. Please go to the link below to check the availability of your location. The following instruction is based on the location of the United States.
 
 [https://docs.microsoft.com/en-us/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans](https://docs.microsoft.com/en-us/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans) 
 
- 
+#### Task 1 - Add a new emergency address
 
-#### Task 1 – Activate a trial Calling Plan 
+In this task you will add a new emergency address "One Microsoft Way, Redmond, WA 98052, USA" for users in the United States. It is used to route emergency calls to the appropriate dispatch authorities and to assist in locating the emergency caller.
+
+1. Connect to the **Client 1 VM** and sign in with the Credentials that have been provided to you.
+
+2. You should still be in the **Teams admin center** and signed in as **Joni Sherman** (JoniS@&lt;YourTenant&gt;.onmicrosoft.com).
+
+3. On the left navigation pane select **Locations** and below select **Emergency addresses**.
+
+4. Select **+ Add** from the top pane to create a new emergency address.
+
+5. On the **Location\Add location** page, enter the following information:
+
+	- Put in a name for your location: **Contoso Emergency Address**
+
+	- Add a friendly description so you know why it was created: **Emergency Address for Contoso employees.**
+
+	- Country or region: **United States**
+
+	- Address: **1 Microsoft Way, Redmond, WA 98052** 
+
+      (You can enable **Edit the address manually**, and enter the address manually)
+
+6. Acknowledge the emergency calling disclaimer.
+
+7. Select **Save**.
+
+You have successfully created an emergency address that can be used for phone numbers.
+ 
+#### Task 2 – Activate a trial Calling Plan 
 
 In this task you will activate the Calling Plan Add-on Trial for your tenant so you can assign the calling plan to your users.
 
@@ -556,7 +567,7 @@ In this task you will activate the Calling Plan Add-on Trial for your tenant so 
 
 You now have 25 Calling Plan licenses to assign to your users to test Domestic Calling Plan capabilities.
 
-#### Task 2 – Assign a Calling Plan license to a user
+#### Task 3 – Assign a Calling Plan license to a user
 
 In this task you will assign the calling plan license to a user to allow them to make domestic calls via the public switched telephone network.
 
@@ -578,7 +589,7 @@ In this task you will assign the calling plan license to a user to allow them to
 
 You have assigned the Calling Plan license to a user. With this license assigned your users can use the Calling Plan features and receive a phone number.
 
-#### Task 3 – Order a phone number for your user
+#### Task 4 – Order a phone number for your user
 
 In this task you will order a phone number to a user with an assigned Calling Plan license.
 
@@ -610,7 +621,7 @@ In this task you will order a phone number to a user with an assigned Calling Pl
 
 You just ordered a phone number for a User in Microsoft Teams. This is the same process you use to order numbers for all other Microsoft Teams services such as Call queues.
 
-#### Task 4 – Assign a phone number to your user
+#### Task 5 – Assign a phone number to your user
 
 In this Task you will assign an existing phone number to a user.
 
