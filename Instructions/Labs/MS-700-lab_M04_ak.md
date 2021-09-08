@@ -189,6 +189,10 @@ In this task you will create via the Teams PowerShell a new team **"CA-Office"**
 
 3. Run the following cmdlet to connect to Microsoft Teams in your tenant:
 
+    ```powershell
+   Install-Module -Name MicrosoftTeams 
+   ```
+
    ```powershell
    Connect-MicrosoftTeams
    ```
