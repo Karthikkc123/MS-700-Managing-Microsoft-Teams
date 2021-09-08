@@ -357,7 +357,6 @@ In this task, **Lynne Robbins** will continue testing the self-service capabilit
 
     * Megan Bowen
 
-The newly created team is displayed in the list of your teams. You have successfully created a new team with the Teams web client.
 You have successfully created a new team with the Teams web client. This is the end of lab 1. You can close all browser windows and proceed to the next lab.
 
 END OF LAB
