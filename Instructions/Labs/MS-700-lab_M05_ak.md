@@ -288,9 +288,9 @@ In this task, you will create an issue report system by using Power Automate in 
 
 	6. Select **Create flow** > **Done**
 
-5. Add the form to the **General** channel of **Contoso** team.
+5. Add the form to the **General** channel of **Teams Rollout** team.
 
-	1. Go to the **General** channel of **Contoso** team.
+	1. Go to the **General** channel of **Teams Rollout** team.
 	2. Add a tab by selecting **+** next to Wiki tab. 
 	3. Select **Forms** from the **Add a tab** window. 
 	4. Select **Add an existing form**, and select **Submit a ticket**.	
@@ -298,7 +298,7 @@ In this task, you will create an issue report system by using Power Automate in 
 
 6. Test the flow
 
-	1. In the **General** channel of **Contoso** team, select **Fill|Submit a ticket** tab. 
+	1. In the **General** channel of **Teams Rollout** team, select **Fill|Submit a ticket** tab. 
 	2. On the **Submit a ticket** page, enter the following to the textbox:
 	
 		*I need help to create a team for external partners.*  
