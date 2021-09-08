@@ -37,8 +37,6 @@ After you complete this lab, you will be able to:
 
 ## **Instructions**
 
-
-
 ### **Exercise 1: Implement governance and lifecycle management for Microsoft Teams**
 
 Your organization has started the planning process for Microsoft 365 services adoption. You are assigned as a Teams admin role to plan Teams governance. Since Teams relies on Microsoft 365 groups, you need to plan governance procedures for Microsoft 365 groups, including creating, configuring and assigning sensitivity labels, creating Microsoft 365 groups expiration policies, configuring Microsoft 365 Group creation policy permissions, configuring and test Microsoft 365 Groups naming policies.
@@ -57,9 +55,11 @@ In this task, you will use the default global admin to login to the Microsoft 36
 
 2. Assign the role of the **Teams Administrator** to **Joni Sherman**.
 
-3. Assign the role of the **Teams communication support engineer** to **Allan Deyoung**.
+3. Assign the role of the **Teams Device Administrator** to **Alex Wilber**.
 
-4. Leave the client open at the **Microsoft 365 admin center**.
+4. Assign the role of the **Teams Communication admin** to **Allan Deyoung**.
+
+5. Leave the client open at the **Microsoft 365 admin center**.
 
 You have now successfully assigned the Teams admin role to Joni Sherman and the Teams communications support engineer to Allan Deyoung. Proceed to the next task.
 
@@ -74,25 +74,40 @@ In real world scenarios, the Microsoft 365 Groups would already exist and your t
 
 You will create the new Microsoft 365 Group named "IT-Department" and then add the pilot members serving as a basis for your future teams and licensing.
 
-1. Sign in to the **Microsoft 365 admin center** ([**https://admin.microsoft.com**](https://admin.microsoft.com/)) as **Joni Sherman** (JoniS@&lt;YourTenant&gt;.onmicrosoft.com).
+1. Connect to the **Client 1 VM** and browse to the **Microsoft 365 admin center** (https://admin.microsoft.com/) as **Joni Sherman**  (JoniS@&lt;YourTenant&gt;.onmicrosoft.com).
 
-2. Create and configure a new Microsoft 365 group with the following settings:
+2. In the Microsoft 365 admin center, select **Groups** > **Active** **Groups**.
 
-	- Name: **IT-Department**
+3. On the **Active groups** page, select **Add a group**.
 
-	- Description: **All staff of the IT-Department**
+4. Follow the **Add a group** wizard with the following information:
 
-	- Owners: **Joni Sherman**
+    * Group type : Select **Microsoft 365 (recommended)**.
+    * Basics : 
+    	- Name: **IT-Department**
+    	- Description: **All staff of the IT-Department**
+    
+    * Owners : 
+        - Select **+ Assign owners** 
+        - Search and select **Joni Sherman**
+        - Select **Add(1)**, and then select **Next**.
 
-	- Group email address: **IT-Department**@&lt;YourTenant&gt;.onmicrosoft.com
+    * Members : 
+        - Alex Wilber
+        - Allan Deyoung
+        - Lynne Robbins
+        - Megan Bowen
 
-	- Privacy: **Private – Only members can see group content**
+    * Settings : 
+        - Enter **IT-Department** for Group email address. 
+        - Privacy : Private
+        - Uncheck **Create a team for this group**.
 
-	- Create a team for this group: **Clear the checkbox**
+5. Select **Create group** > **Close**.
 
-	- Members: **Alex Wilber, Allan Deyoung, Lynne Robbins** and **Megan Bowen**
+6. Wait a moment and select **Refresh** until the group is visible. You will see there is no Teams icon in the **Teams status** column.
 
-3. Close the **Microsoft 365 admin center**.
+7. Select the **IT-Department** group to review the settings and members. 
 
 The new Microsoft 365 Group with the name "IT-Department" was successfully created. Close the browser window and continue to the next task.
 
@@ -102,45 +117,45 @@ To test the self-service capabilities of Teams, in this task, Megan Bowen will s
 
 1. Connect to the **Client 2 VM** with the credentials that have been provided to you.
 
-2. Connect to a client and sign in to the Teams Desktop client using **Megan Bowen** (MeganB@&lt;YourTenant&gt;.onmicrosoft.com).
+2. Select the **Teams** icon on the taskbar to start the Teams Desktop client.
 
-3. Create a new team with the following settings:
+3. When prompted to **Enter your work, school or Microsoft account**. Sign in as **Megan Bowen** (MeganB@&lt;YourTenant&gt;.onmicrosoft.com).
 
-	- Type: **Build a team from scratch**
+4. In the Teams client, select **Join or create a team** from the lower left corner. 
 
-	- Privacy: **Public**
+5. Select **Create team** >**From scratch** > **Public**. Enter the team name **Teams Rollout** and select **Create**.
 
-	- Name: **Teams Rollout**
+6. On the **Add members to Teams Rollout** window, enter the following names and select **Add**. 
 
-	- Owners: **Joni Sherman** and **Megan Bowen**
+    * Alex Wilber
+    * Allan Deyoung
+    * Joni Sherman
+    * Lynne Robbins
 
-	- Members: **Alex Wilber**, **Allan Deyoung** and **Lynne Robbins**
+7. Select the dropdown menu next to Joni Sherman and switch from **Member** to **Owner**. 
 
-4. Close the Teams Desktop client.
+8. Select **Close**.
 
-You have successfully created a new team with the Teams Desktop client, added the project team members and you have made Joni Sherman a second owner of the team. Close the Teams client and continue with the next task.
+You have successfully created a new team from the Teams desktop client, added the project team members, and you have made Joni Sherman a team owner.
 
 #### Create a new team by using the web client
 
 In this task, Lynne Robbins will continue testing the self-service capabilities of Teams by using the Teams web client to create another team with the name "Sales". She will also add Megan Bowen as a member.
 
-1. Sign in to the Teams web client ([**https://teams.microsoft.com**](https://teams.microsoft.com/)) using **Lynne Robbins** (LynneR@&lt;YourTenant&gt;.onmicrosoft.com).
+1. Connect to the **Client 2 VM** with the credentials that have been provided to you.
 
-2. Create a new team with the following settings:
+2. Browse to the **Microsoft Teams web client** at [**https://teams.microsoft.com**](https://teams.microsoft.com/) and sign in as **Lynne Robbins** (LynneR@&lt;YourTenant&gt;.onmicrosoft.com).
 
-	- Type: **Build a team from scratch**
+4. Select **Join or create a team** from the lower left corner. 
 
-	- Privacy: **Private**
+5. Select **Create team** >**From scratch** > **Private**. Enter the team name **Sales** and select **Create**.
 
-	- Name: **Sales**
+6. On the **Add members to Sales** window, enter the following names and select **Add** > **Close**.
 
-	- Owners: **Lynne Robbins**
+    * Megan Bowen
 
-	- Members: **Megan Bowen**
+The newly created team is displayed in the list of your teams. You have successfully created a new team with the Teams web client.
 
-3. Close the Teams web client.
-
-You have successfully created a new team with the Teams web client. This is the end of lab 1. .
 #### Task 1 – Activate sensitivity labels for Teams 
 
 You need to evaluate governance for Microsoft 365 Groups before deploying them in your organizations. In this task, you will activate the sensitivity labels for Teams in Azure AD, for being able to assign labels in a following task.
