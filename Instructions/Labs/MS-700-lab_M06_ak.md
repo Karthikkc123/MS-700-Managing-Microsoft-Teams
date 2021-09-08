@@ -308,7 +308,145 @@ Contoso Ltd. Wants to broadcast video and meeting content to large online audien
 
 You have successfully created a live event and shared content with your attendees.
 
-### **Exercise 2: Manage phone system for Microsoft Teams**
+### **Exercise 2: Set up a Calling Plan (Optional)**
+
+In this exercise you will set up one of your users with a Calling Plan Trial. You will need to start the trial, order a phone number from Microsoft as your provider and enable your user to use this phone number when making outgoing calls.
+
+
+**Note:** The availability of Calling Plans varies based on different countries and regions. Please go to the link below to check the availability of your location. The following instruction is based on the location of the United States.
+
+[https://docs.microsoft.com/en-us/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans](https://docs.microsoft.com/en-us/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans) 
+
+#### Task 1 - Add a new emergency address
+
+In this task you will add a new emergency address "One Microsoft Way, Redmond, WA 98052, USA" for users in the United States. It is used to route emergency calls to the appropriate dispatch authorities and to assist in locating the emergency caller.
+
+1. Connect to the **Client 1 VM** and sign in with the Credentials that have been provided to you.
+
+2. You should still be in the **Teams admin center** and signed in as **Joni Sherman** (JoniS@&lt;YourTenant&gt;.onmicrosoft.com).
+
+3. On the left navigation pane select **Locations** and below select **Emergency addresses**.
+
+4. Select **+ Add** from the top pane to create a new emergency address.
+
+5. On the **Location\Add location** page, enter the following information:
+
+	- Put in a name for your location: **Contoso Emergency Address**
+
+	- Add a friendly description so you know why it was created: **Emergency Address for Contoso employees.**
+
+	- Country or region: **United States**
+
+	- Address: **1 Microsoft Way, Redmond, WA 98052** 
+
+      (You can enable **Edit the address manually**, and enter the address manually)
+
+6. Acknowledge the emergency calling disclaimer.
+
+7. Select **Save**.
+
+You have successfully created an emergency address that can be used for phone numbers.
+ 
+#### Task 2 – Activate a trial Calling Plan 
+
+In this task you will activate the Calling Plan Add-on Trial for your tenant so you can assign the calling plan to your users.
+
+1. Connect to the **Client 1 VM** and sign in with the Credentials that have been provided to you.
+
+2. Open **Microsoft Edge**, maximize the window and navigate to the **Microsoft 365 admin center** at [**https://admin.microsoft.com/**](https://admin.microsoft.com/).
+
+3. On the **Pick an account** page, select the **MOD Administrator**(Admin@&lt;YourTenant&gt;.onmicrosoft.com) and sign in with the provided credentials.
+
+4. Open the Navigation Menu in the upper left corner and select  **Billing &gt; purchase services**.
+
+5. Scroll to the bottom of the page and select **Add-ons**.
+
+6. Scroll down until you see **Microsoft 365 Domestic Calling Plan for US and Canada Trial** or search for it in search box and select **Details**.
+
+7. Select **Get free trial**.
+
+8. Select **Try now** to get 25 Calling Plans for a month.
+
+9. Select **Continue** to continue past the order receipt.
+
+You now have 25 Calling Plan licenses to assign to your users to test Domestic Calling Plan capabilities.
+
+#### Task 3 – Assign a Calling Plan license to a user
+
+In this task you will assign the calling plan license to a user to allow them to make domestic calls via the public switched telephone network.
+
+1. Connect to the **Client 1 VM** and sign in with the Credentials that have been provided to you.
+
+2. You should still be in the **Microsoft 365 admin center** and signed in as **MOD Administrator** (Admin@&lt;YourTenant&gt;.onmicrosoft.com).
+
+3. Open the Navigation Menu in the upper left corner and select **Users**.
+
+4. Select **Active users**.
+
+5. Search for **Megan Bowen** and open the additional settings by selecting her name.
+
+6. Select **Licenses and Apps**.
+
+7. Under **Licenses** select **Microsoft 365 Domestic Calling Plan** by setting the checkmark in front of it.
+
+8. Select **Save Changes** to assign the license.
+
+You have assigned the Calling Plan license to a user. With this license assigned your users can use the Calling Plan features and receive a phone number.
+
+#### Task 4 – Order a phone number for your user
+
+In this task you will order a phone number to a user with an assigned Calling Plan license.
+
+1. Connect to the **Client 1 VM** and sign in with the Credentials that have been provided to you.
+
+2. In the **Microsoft Teams client** sign in as **Joni Sherman** (JoniS@&lt;YourTenant&gt;.onmicrosoft.com) and sign in with the provided credentials.
+
+3. Navigate to the **Teams admin center** at [**https://admin.teams.microsoft.com/**](https://admin.teams.microsoft.com/).
+
+4. On the left navigation pane, select **Voice**, and then **Phone numbers** below.
+
+5. Select **Add** in the right pane.
+
+6. Type **Phone number order** as the **Order Name**.
+
+7. Fill out the description as **Number for Megan Bowen during the Calling Plan trial**.
+
+8. In the dropdown menu of **Country or region**, select **United States**.
+
+9. For **Number Type** select **User (Subscriber)**.
+
+10. For **Location,** search **Redmond** and select **Contoso Emergency Address**.
+
+11. For **Quantity**  select 1.
+
+12. Select **Next**, Select **Place Order**and then click on **Finish**.
+
+**Note:** It might take some time for the phone numbers to show up. You can check your order from the **Order history** tab.
+
+You just ordered a phone number for a User in Microsoft Teams. This is the same process you use to order numbers for all other Microsoft Teams services such as Call queues.
+
+#### Task 5 – Assign a phone number to your user
+
+In this Task you will assign an existing phone number to a user.
+
+1. Connect to the **Client 1 VM** and sign in with the Credentials that have been provided to you.
+
+2. You should still be in the **Teams admin center** and signed in as **Joni Sherman** (JoniS@&lt;YourTenant&gt;.onmicrosoft.com).
+
+3. On the left navigation pane, select **Voice**, and then **Phone numbers** below.
+
+4. Select the phone number you want to assign and select **edit** to open the options.
+
+5. Under **Assigned to** search for **Megan Bowen** and select **assign**.
+
+6. Under **Emergency Location** select **Search by the location description**.
+
+7. Search for the emergency location you created earlier.
+
+8. Select **Apply** to assign the phone number to the user.
+
+
+### **Exercise 3: Manage phone system for Microsoft Teams**
 
 Contoso organization is using legacy PBX system. With introduction of Microsoft Teams, Contoso will migrate their legacy telephony system to Microsoft Phone System. Teams admins are responsible for evaluating and testing Microsoft Teams voice functionalities.
 
@@ -503,143 +641,6 @@ As Teams admin, you were tasked to create an auto attendant with a transcribed w
 19. Close all browser windows.
 
 You have successfully created a resource account for the auto attendant and then created an auto attendant configuration.
-
-### **Exercise 3: Set up a Calling Plan (Optional)**
-
-In this exercise you will set up one of your users with a Calling Plan Trial. You will need to start the trial, order a phone number from Microsoft as your provider and enable your user to use this phone number when making outgoing calls.
-
-
-**Note:** The availability of Calling Plans varies based on different countries and regions. Please go to the link below to check the availability of your location. The following instruction is based on the location of the United States.
-
-[https://docs.microsoft.com/en-us/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans](https://docs.microsoft.com/en-us/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans) 
-
-#### Task 1 - Add a new emergency address
-
-In this task you will add a new emergency address "One Microsoft Way, Redmond, WA 98052, USA" for users in the United States. It is used to route emergency calls to the appropriate dispatch authorities and to assist in locating the emergency caller.
-
-1. Connect to the **Client 1 VM** and sign in with the Credentials that have been provided to you.
-
-2. You should still be in the **Teams admin center** and signed in as **Joni Sherman** (JoniS@&lt;YourTenant&gt;.onmicrosoft.com).
-
-3. On the left navigation pane select **Locations** and below select **Emergency addresses**.
-
-4. Select **+ Add** from the top pane to create a new emergency address.
-
-5. On the **Location\Add location** page, enter the following information:
-
-	- Put in a name for your location: **Contoso Emergency Address**
-
-	- Add a friendly description so you know why it was created: **Emergency Address for Contoso employees.**
-
-	- Country or region: **United States**
-
-	- Address: **1 Microsoft Way, Redmond, WA 98052** 
-
-      (You can enable **Edit the address manually**, and enter the address manually)
-
-6. Acknowledge the emergency calling disclaimer.
-
-7. Select **Save**.
-
-You have successfully created an emergency address that can be used for phone numbers.
- 
-#### Task 2 – Activate a trial Calling Plan 
-
-In this task you will activate the Calling Plan Add-on Trial for your tenant so you can assign the calling plan to your users.
-
-1. Connect to the **Client 1 VM** and sign in with the Credentials that have been provided to you.
-
-2. Open **Microsoft Edge**, maximize the window and navigate to the **Microsoft 365 admin center** at [**https://admin.microsoft.com/**](https://admin.microsoft.com/).
-
-3. On the **Pick an account** page, select the **MOD Administrator**(Admin@&lt;YourTenant&gt;.onmicrosoft.com) and sign in with the provided credentials.
-
-4. Open the Navigation Menu in the upper left corner and select  **Billing &gt; purchase services**.
-
-5. Scroll to the bottom of the page and select **Add-ons**.
-
-6. Scroll down until you see **Microsoft 365 Domestic Calling Plan for US and Canada Trial** or search for it in search box and select **Details**.
-
-7. Select **Get free trial**.
-
-8. Select **Try now** to get 25 Calling Plans for a month.
-
-9. Select **Continue** to continue past the order receipt.
-
-You now have 25 Calling Plan licenses to assign to your users to test Domestic Calling Plan capabilities.
-
-#### Task 3 – Assign a Calling Plan license to a user
-
-In this task you will assign the calling plan license to a user to allow them to make domestic calls via the public switched telephone network.
-
-1. Connect to the **Client 1 VM** and sign in with the Credentials that have been provided to you.
-
-2. You should still be in the **Microsoft 365 admin center** and signed in as **MOD Administrator** (Admin@&lt;YourTenant&gt;.onmicrosoft.com).
-
-3. Open the Navigation Menu in the upper left corner and select **Users**.
-
-4. Select **Active users**.
-
-5. Search for **Megan Bowen** and open the additional settings by selecting her name.
-
-6. Select **Licenses and Apps**.
-
-7. Under **Licenses** select **Microsoft 365 Domestic Calling Plan** by setting the checkmark in front of it.
-
-8. Select **Save Changes** to assign the license.
-
-You have assigned the Calling Plan license to a user. With this license assigned your users can use the Calling Plan features and receive a phone number.
-
-#### Task 4 – Order a phone number for your user
-
-In this task you will order a phone number to a user with an assigned Calling Plan license.
-
-1. Connect to the **Client 1 VM** and sign in with the Credentials that have been provided to you.
-
-2. In the **Microsoft Teams client** sign in as **Joni Sherman** (JoniS@&lt;YourTenant&gt;.onmicrosoft.com) and sign in with the provided credentials.
-
-3. Navigate to the **Teams admin center** at [**https://admin.teams.microsoft.com/**](https://admin.teams.microsoft.com/).
-
-4. On the left navigation pane, select **Voice**, and then **Phone numbers** below.
-
-5. Select **Add** in the right pane.
-
-6. Type **Phone number order** as the **Order Name**.
-
-7. Fill out the description as **Number for Megan Bowen during the Calling Plan trial**.
-
-8. In the dropdown menu of **Country or region**, select **United States**.
-
-9. For **Number Type** select **User (Subscriber)**.
-
-10. For **Location,** search **Redmond** and select **Contoso Emergency Address**.
-
-11. For **Quantity**  select 1.
-
-12. Select **Next**, Select **Place Order**and then click on **Finish**.
-
-**Note:** It might take some time for the phone numbers to show up. You can check your order from the **Order history** tab.
-
-You just ordered a phone number for a User in Microsoft Teams. This is the same process you use to order numbers for all other Microsoft Teams services such as Call queues.
-
-#### Task 5 – Assign a phone number to your user
-
-In this Task you will assign an existing phone number to a user.
-
-1. Connect to the **Client 1 VM** and sign in with the Credentials that have been provided to you.
-
-2. You should still be in the **Teams admin center** and signed in as **Joni Sherman** (JoniS@&lt;YourTenant&gt;.onmicrosoft.com).
-
-3. On the left navigation pane, select **Voice**, and then **Phone numbers** below.
-
-4. Select the phone number you want to assign and select **edit** to open the options.
-
-5. Under **Assigned to** search for **Megan Bowen** and select **assign**.
-
-6. Under **Emergency Location** select **Search by the location description**.
-
-7. Search for the emergency location you created earlier.
-
-8. Select **Apply** to assign the phone number to the user.
 
 END OF LAB
 
