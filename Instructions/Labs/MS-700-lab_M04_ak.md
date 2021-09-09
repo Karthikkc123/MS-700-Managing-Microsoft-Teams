@@ -95,6 +95,7 @@ You will create the new Microsoft 365 Group named "IT-Department" and then add t
 
 2. In the Microsoft 365 admin center, select **Groups** > **Active** **Groups**.
 
+
 3. On the **Active groups** page, select **Add a group**.
 
 4. Follow the **Add a group** wizard with the following information:
@@ -123,6 +124,35 @@ You will create the new Microsoft 365 Group named "IT-Department" and then add t
 5. Select **Create group** > **Close**.
 
 6. Wait a moment and select **Refresh** until the group is visible. You will see there is no Teams icon in the **Teams status** column.
+=======
+      - Group type: leave default
+
+   Under **Set up the basics**
+        
+      - Name: **IT-Department**
+
+      - Description: **All staff of the IT-Department**
+	
+   Under **Assign owners**
+
+      - Owners: **Joni Sherman**
+
+   Under **Add Members**
+
+      - Members: **Alex Wilber, Allan Deyoung, Lynne Robbins** and **Megan Bowen**
+	
+   Under **Add Settings**
+
+      - Group email address: **IT-Department**@&lt;YourTenant&gt;.onmicrosoft.com
+
+      - Privacy: **Private – Only members can see group content**
+
+      - Create a team for this group: **Clear the checkbox**
+
+   Under **Review and finish adding group**
+ 
+      - Review the changes and click on **Create Group**
+
 
 7. Select the **IT-Department** group to review the settings and members. 
 
@@ -138,7 +168,11 @@ To test the self-service capabilities of Teams, in this task, Megan Bowen will s
 
 3. When prompted to **Enter your work, school or Microsoft account**. Sign in as **Megan Bowen** (MeganB@&lt;YourTenant&gt;.onmicrosoft.com).
 
+
 4. In the Teams client, select **Join or create a team** from the lower left corner. 
+=======
+	- Type: **Create a team from scratch**
+
 
 5. Select **Create team** >**From scratch** > **Public**. Enter the team name **Teams Rollout** and select **Create**.
 
@@ -159,7 +193,14 @@ You have successfully created a new team from the Teams desktop client, added th
 
 In this task, Lynne Robbins will continue testing the self-service capabilities of Teams by using the Teams web client to create another team with the name "Sales". She will also add Megan Bowen as a member.
 
+
 1. Connect to the **Client 2 VM** with the credentials that have been provided to you.
+=======
+1. Sign in to the Teams web client ([**https://teams.microsoft.com**](https://teams.microsoft.com/)) using **Lynne Robbins** (LynneR@&lt;YourTenant&gt;.onmicrosoft.com).
+
+2. Create a new team with the following settings:
+
+	- Type: **Create a team from scratch**
 
 2. Browse to the **Microsoft Teams web client** at [**https://teams.microsoft.com**](https://teams.microsoft.com/) and sign in as **Lynne Robbins** (LynneR@&lt;YourTenant&gt;.onmicrosoft.com).
 
@@ -220,6 +261,10 @@ In this task you will create via the Teams PowerShell a new team **"CA-Office"**
    Install-Module -Name MicrosoftTeams 
    ```
 
+   ```powershell
+   Install-Module -Name MicrosoftTeams -Force -AllowClobber
+   ```
+   
    ```powershell
    Connect-MicrosoftTeams
    ```
@@ -725,7 +770,7 @@ As a part of your system administrator role, you need to review access to resour
 13. In the middle of the page select **+ New access review** and follow the steps below to create a new Access review.
 
 	- On the **Review type** section of the **New access review** page, select the radio button beside **Select teams + Groups**
-	- select **Select goroup(s)** and chose the Group: **IT-Department**
+	- select **Select group(s)** and chose the Group: **IT-Department**
 	- select the radio button beside **Guest users only**
 	- select **Next:Reviews**
 
@@ -763,6 +808,8 @@ As a part of your system administrator role, you need to review access to resour
 23. If a welcome screen appears, close it.
 
 24. In the middle of the page, you will see an Email from **Microsoft Azure** with the topic **Action required: Review group access by &lt;local date + 7 days in the future&gt;**, then select this Email.
+
+ **Note:** It may take few minutes for the Email to appear.
 
 25. Select the **Start review** button in this Email.
 

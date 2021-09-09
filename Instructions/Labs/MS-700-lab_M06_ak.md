@@ -104,6 +104,7 @@ You will create the new Microsoft 365 Group named "IT-Department" and then add t
 
 2. In the Microsoft 365 admin center, select **Groups** > **Active** **Groups**.
 
+
 3. On the **Active groups** page, select **Add a group**.
 
 4. Follow the **Add a group** wizard with the following information:
@@ -132,6 +133,34 @@ You will create the new Microsoft 365 Group named "IT-Department" and then add t
 5. Select **Create group** > **Close**.
 
 6. Wait a moment and select **Refresh** until the group is visible. You will see there is no Teams icon in the **Teams status** column.
+=======
+      - Group type: leave default
+
+   Under **Set up the basics**
+        
+      - Name: **IT-Department**
+
+      - Description: **All staff of the IT-Department**
+	
+   Under **Assign owners**
+
+      - Owners: **Joni Sherman**
+
+   Under **Add Members**
+
+      - Members: **Alex Wilber, Allan Deyoung, Lynne Robbins** and **Megan Bowen**
+	
+   Under **Add Settings**
+
+      - Group email address: **IT-Department**@&lt;YourTenant&gt;.onmicrosoft.com
+
+      - Privacy: **Private – Only members can see group content**
+
+      - Create a team for this group: **Clear the checkbox**
+
+   Under **Review and finish adding group**
+ 
+      - Review the changes and click on **Create Group**
 
 7. Select the **IT-Department** group to review the settings and members. 
 
@@ -147,7 +176,11 @@ To test the self-service capabilities of Teams, in this task, Megan Bowen will s
 
 3. When prompted to **Enter your work, school or Microsoft account**. Sign in as **Megan Bowen** (MeganB@&lt;YourTenant&gt;.onmicrosoft.com).
 
+
 4. In the Teams client, select **Join or create a team** from the lower left corner. 
+=======
+	- Type: **Create a team from scratch**
+
 
 5. Select **Create team** >**From scratch** > **Public**. Enter the team name **Teams Rollout** and select **Create**.
 
@@ -169,6 +202,14 @@ You have successfully created a new team from the Teams desktop client, added th
 In this task, Lynne Robbins will continue testing the self-service capabilities of Teams by using the Teams web client to create another team with the name "Sales". She will also add Megan Bowen as a member.
 
 1. Connect to the **Client 2 VM** with the credentials that have been provided to you.
+=======
+1. Sign in to the Teams web client ([**https://teams.microsoft.com**](https://teams.microsoft.com/)) using **Lynne Robbins** (LynneR@&lt;YourTenant&gt;.onmicrosoft.com).
+
+2. Create a new team with the following settings:
+
+	- Type: **Create a team from scratch**
+
+	- Privacy: **Private**
 
 2. Browse to the **Microsoft Teams web client** at [**https://teams.microsoft.com**](https://teams.microsoft.com/) and sign in as **Lynne Robbins** (LynneR@&lt;YourTenant&gt;.onmicrosoft.com).
 
@@ -221,6 +262,16 @@ In this task you need to sign in to the second client and create a meeting with 
 5. On the Microsoft Team page, hover the mouse over the meeting page, and select the three dots (…) for **More actions**.
 
 6. Note that **Start recording** option is visible but is dimmed, not available to be selected.
+
+=======
+**Note:** If the **Start recording** option still appears as available for select then you might need to 
+
+   - Goto task bar then click up-arrow to show hidden icons
+   
+   - Right click on Teams and select **Quit**
+
+   - Restart the Teams Desktop client
+ 
 
 #### Task 3 - Configure meeting settings and restrict anonymous users from joining meetings
 
@@ -669,6 +720,119 @@ As Teams admin, you were tasked to create an auto attendant with a transcribed w
 19. Close all browser windows.
 
 You have successfully created a resource account for the auto attendant and then created an auto attendant configuration.
+
+=======
+### **Exercise 3: Set up a Calling Plan (Optional)**
+
+In this exercise you will set up one of your users with a Calling Plan Trial. You will need to start the trial, order a phone number from Microsoft as your provider and enable your user to use this phone number when making outgoing calls.
+
+
+**Note:** The availability of Calling Plans varies based on different countries and regions. Please go to the link below to check the availability of your location. The following instruction is based on the location of the United States.
+
+[https://docs.microsoft.com/en-us/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans](https://docs.microsoft.com/en-us/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans) 
+
+ 
+#### Task 1 – Activate a trial Calling Plan 
+
+In this task you will activate the Calling Plan Add-on Trial for your tenant so you can assign the calling plan to your users.
+
+1. Connect to the **Client 1 VM** and sign in with the Credentials that have been provided to you.
+
+2. Open **Microsoft Edge**, maximize the window and navigate to the **Microsoft 365 admin center** at [**https://admin.microsoft.com/**](https://admin.microsoft.com/).
+
+3. On the **Pick an account** page, select the **MOD Administrator**(Admin@&lt;YourTenant&gt;.onmicrosoft.com) and sign in with the provided credentials.
+
+4. Open the Navigation Menu in the upper left corner and select  **Billing &gt; purchase services**.
+
+5. Scroll to the bottom of the page and select **Add-ons**.
+
+6. Scroll down until you see **Microsoft 365 Domestic Calling Plan Trial** and select **Details**.
+
+7. Select **Start free trial**.
+
+8. Select **Try now** to get 25 Calling Plans for a month.
+
+9. Select **Continue** to continue past the order receipt.
+
+You now have 25 Calling Plan licenses to assign to your users to test Domestic Calling Plan capabilities.
+
+#### Task 2 – Assign a Calling Plan license to a user
+
+In this task you will assign the calling plan license to a user to allow them to make domestic calls via the public switched telephone network.
+
+1. Connect to the **Client 1 VM** and sign in with the Credentials that have been provided to you.
+
+2. You should still be in the **Microsoft 365 admin center** and signed in as **MOD Administrator** (Admin@&lt;YourTenant&gt;.onmicrosoft.com).
+
+3. Open the Navigation Menu in the upper left corner and select **Users**.
+
+4. Select **Active users**.
+
+5. Search for **Megan Bowen** and open the additional settings by selecting her name.
+
+6. Select **Licenses and Apps**.
+
+7. Under **Licenses** select **Microsoft 365 Domestic Calling Plan** by setting the checkmark in front of it.
+
+8. Select **Save Changes** to assign the license.
+
+You have assigned the Calling Plan license to a user. With this license assigned your users can use the Calling Plan features and receive a phone number.
+
+#### Task 3 – Order a phone number for your user
+
+In this task you will order a phone number to a user with an assigned Calling Plan license.
+
+1. Connect to the **Client 1 VM** and sign in with the Credentials that have been provided to you.
+
+2. In the **Microsoft Teams client** sign in as **Joni Sherman** (JoniS@&lt;YourTenant&gt;.onmicrosoft.com) and sign in with the provided credentials.
+
+3. Navigate to the **Teams admin center** at [**https://admin.teams.microsoft.com/**](https://admin.teams.microsoft.com/).
+
+4. On the left navigation pane, select **Voice**, and then **Phone numbers** below.
+
+5. Select **Add** in the right pane.
+
+6. Type **Phone number order** as the **Order Name**.
+
+7. Fill out the description as **Number for Megan Bowen during the Calling Plan trial**.
+
+8. In the dropdown menu of **Country or region**, select **United States**.
+
+9. For **Number Type** select **User (Subscriber)**.
+
+10. For **Quantity**  enter 1.
+
+11. For **Location,** 
+
+12. Under **Search by cityname** search **Redmond** and select **Azure HOL 1398**, which appears in the dropdown.
+
+13. Select **Next** 
+
+14. Click on **Place order**
+
+**Note:** It might take some time for the phone numbers to show up. You can check your order from the **Order history** tab.
+
+You just ordered a phone number for a User in Microsoft Teams. This is the same process you use to order numbers for all other Microsoft Teams services such as Call queues.
+
+#### Task 4 – Assign a phone number to your user
+
+In this Task you will assign an existing phone number to a user.
+
+1. Connect to the **Client 1 VM** and sign in with the Credentials that have been provided to you.
+
+2. You should still be in the **Teams admin center** and signed in as **Joni Sherman** (JoniS@&lt;YourTenant&gt;.onmicrosoft.com).
+
+3. On the left navigation pane, select **Voice**, and then **Phone numbers** below.
+
+4. Select the phone number you want to assign and select **edit** to open the options.
+
+5. Under **Assigned to** search for **Megan Bowen** and select **assign**.
+
+6. Under **Emergency Location** select **Search by the location description**.
+
+7. Search for **Redmond** the emergency location you created earlier.
+
+8. Select **Apply** to assign the phone number to the user.
 
 END OF LAB
 
